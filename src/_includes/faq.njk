@@ -1,0 +1,109 @@
+<div>
+  <!-- FAQ Section -->
+<section class="py-24 bg-black text-white">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mb-16">
+      <h6 class="text-lg text-red-600 font-medium text-center mb-2">
+        FAQs
+      </h6>
+      <h2 class="text-4xl font-manrope text-center font-bold text-white leading-[3.25rem]">
+        Frequently asked questions
+      </h2>
+    </div>
+
+    <div class="accordion-group space-y-4" data-accordion="default-accordion">
+
+      <!-- FAQ Item 1 -->
+      <div class="accordion bg-zinc-900 hover:bg-zinc-800 transition-all duration-300 rounded-2xl px-6 py-5">
+        <button class="accordion-toggle group flex items-center justify-between w-full text-left text-white hover:text-red-500">
+          <h5 class="text-lg font-medium">What kind of projects do you usually take on?</h5>
+          <svg class="w-6 h-6 text-gray-400 group-hover:text-red-500 transition-transform duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="accordion-content mt-3 text-base text-white max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
+          <div class="opacity-0 translate-y-2 transition-all duration-500 ease-in-out">
+            I focus on creative work that combines storytelling and visuals. That includes branded content, campaigns, short films, and photography projects. If it needs a strong concept and a clear visual identity, I'm interested.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="accordion bg-zinc-900 hover:bg-zinc-800 transition-all duration-300 rounded-2xl px-6 py-5">
+        <button class="accordion-toggle group flex items-center justify-between w-full text-left text-white hover:text-red-500">
+          <h5 class="text-lg font-medium">How long does a project usually take?</h5>
+          <svg class="w-6 h-6 text-gray-400 group-hover:text-red-500 transition-transform duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="accordion-content mt-3 text-base text-white max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
+          <div class="opacity-0 translate-y-2 transition-all duration-500 ease-in-out">
+            It depends on the size and complexity of the work. Some projects are done in a few days, others need a few weeks. Once I know what you're looking for, I'll give you a clear timeline.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="accordion bg-zinc-900 hover:bg-zinc-800 transition-all duration-300 rounded-2xl px-6 py-5">
+        <button class="accordion-toggle group flex items-center justify-between w-full text-left text-white hover:text-red-500">
+          <h5 class="text-lg font-medium">Do you work alone or with a team?</h5>
+          <svg class="w-6 h-6 text-gray-400 group-hover:text-red-500 transition-transform duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="accordion-content mt-3 text-base text-white max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
+          <div class="opacity-0 translate-y-2 transition-all duration-500 ease-in-out">
+            I usually handle everything myself. When a project needs more people or specific skills, I bring in collaborators I trust. You'll always work directly with me, from start to finish.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="accordion bg-zinc-900 hover:bg-zinc-800 transition-all duration-300 rounded-2xl px-6 py-5">
+        <button class="accordion-toggle group flex items-center justify-between w-full text-left text-white hover:text-red-500">
+          <h5 class="text-lg font-medium">How do you handle pricing and payments?</h5>
+          <svg class="w-6 h-6 text-gray-400 group-hover:text-red-500 transition-transform duration-300 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="accordion-content mt-3 text-base text-white max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out">
+          <div class="opacity-0 translate-y-2 transition-all duration-500 ease-in-out">
+            Each project is priced based on whats involved. After we go over the details, I’ll send you a clear quote. Payment is usually split into two parts: one at the start and one at the end.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const toggles = document.querySelectorAll('.accordion-toggle');
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const content = toggle.nextElementSibling;
+      const inner = content.querySelector('div');
+      const icon = toggle.querySelector('svg');
+
+      const isOpen = content.style.maxHeight;
+
+      document.querySelectorAll('.accordion-content').forEach(c => {
+        c.style.maxHeight = null;
+        c.querySelector('div').classList.remove('opacity-100', 'translate-y-0');
+        c.querySelector('div').classList.add('opacity-0', 'translate-y-2');
+      });
+      document.querySelectorAll('.accordion-toggle svg').forEach(i => {
+        i.classList.remove('rotate-180');
+      });
+
+      if (!isOpen) {
+        content.style.maxHeight = inner.scrollHeight + 'px';
+        inner.classList.remove('opacity-0', 'translate-y-2');
+        inner.classList.add('opacity-100', 'translate-y-0');
+        icon.classList.add('rotate-180');
+      }
+    });
+  });
+</script>
+
+</div>

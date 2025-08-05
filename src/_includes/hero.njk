@@ -1,0 +1,75 @@
+<style>
+  @keyframes card-fade-move-back {
+    0% {
+      transform: rotate(0deg) translateX(0) translateY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(10deg) translateX(2.5rem) translateY(-1.9rem);
+      opacity: 1;
+    }
+  }
+
+  @keyframes card-fade-move-middle {
+    0% {
+      transform: rotate(0deg) translateX(0) translateY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(5deg) translateX(1.5rem) translateY(-1rem);
+      opacity: 1;
+    }
+  }
+
+  @keyframes card-fade-front {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-card-back {
+    animation: card-fade-move-back 1.2s ease-out forwards;
+    animation-delay: 0.4s;
+  }
+
+  .animate-card-middle {
+    animation: card-fade-move-middle 1s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+
+  .animate-card-front {
+    animation: card-fade-front 0.6s ease-out forwards;
+    animation-delay: 0s;
+  }
+</style>
+
+<div class="relative w-full md:h-[700px] h-[500px] flex items-center justify-center">
+  <div class="absolute text-white leading-[1] text-center font-semibold z-50 top-[62%]">
+    <h1 class="font-mont md:text-8xl text-5xl font-black text-red-600">
+      <span class="relative">
+        <span id="profession" class="typing-mask">
+          {{ title }}
+        </span>
+      </span>
+    </h1>    
+    <h1 class="md:text-4xl text-2xl font-mont">Deak David</h1> <!-- Or any name -->
+    <!-- Footer inside the centered container -->
+  </div>
+  <div class="relative md:w-[300px] md:h-[400px] w-[200px] h-[267px] a -top-[5%]">
+    <!-- Backmost image -->
+    <img src="/photo2.jpg" alt="Photo 3"
+         class="absolute top-0 left-0 w-full h-full object-cover rounded-lg opacity-0 z-0 animate-card-back" />
+
+    <!-- Middle image -->
+    <img src="/photo3.jpg" alt="Photo 2"
+         class="absolute top-0 left-0 w-full h-full object-cover rounded-lg opacity-0 z-10 animate-card-middle" />
+
+    <!-- Front image -->
+    <img src="/assets/landingpage/deakdavidcover.png" alt="Photo 1"
+         class="relative w-full h-full object-cover rounded-lg opacity-0 z-20 animate-card-front" />
+  </div>
+</div>
+

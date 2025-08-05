@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');
+
+.font-mont {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+/* 🔴 Override Typography Defaults */
+.prose {
+    --tw-prose-body: #ffffff;
+    --tw-prose-headings: #ffffff; /* red-100 */
+    --tw-prose-bold: #ffffff;
+    --tw-prose-links: #f87171; /* red-400 */
+    --tw-prose-links-hover: #fca5a5; /* red-300 */
+    --tw-prose-code: #fecaca;
+    --tw-prose-pre-bg: #450a0a; /* red-950 */
+    --tw-prose-pre-code: #fecaca;
+    --tw-prose-quotes: #f87171;
+    --tw-prose-quote-borders: #b91c1c;
+    --tw-prose-hr: #b91c1c;
+    --tw-prose-th-borders: #dc2626;
+    --tw-prose-td-borders: #b91c1c;
+  }
+  
+  /* 🔧 Optional tweaks for appearance */
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    @apply font-bold text-white;
+  }
+  
+  .prose strong {
+    @apply font-bold text-white;
+  }
+  
+  .prose a {
+    @apply underline text-red-400 hover:text-red-300;
+  }
+  
+  .prose blockquote {
+    @apply border-l-4 border-red-700 text-red-300 italic pl-4;
+  }
+  
+/* 🔥 Custom fenced code block styling */
+.prose pre {
+    @apply px-4 py-3 my-6 rounded-lg border border-[#2d2d2d] bg-[#1a1a1a] text-[#ffffff];
+  }
+  
+  /* 🧼 Remove inner spacing and make sure the code is block-level */
+  .prose pre code {
+    @apply p-0 m-0 block whitespace-pre-wrap;
+  }
+  
+  /* 🚫 Remove default inline code quotes added by typography plugin */
+  .prose code::before,
+  .prose code::after {
+    content: none !important;
+  }
+  
+  
+  .prose th {
+    @apply border-b border-red-600 text-white;
+  }
+  
+  .prose td {
+    @apply border-b border-red-700 text-white;
+  }
+  
+  .prose ol > li,
+  .prose ul > li,
+  .prose p {
+    @apply text-white;
+  }
+
+  /* LOADING ANIMATION */
+.container {
+    --uib-size: 45px;
+    --uib-color: white;
+    --uib-speed: 1.75s;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20%;
+    justify-content: space-between;
+    width: var(--uib-size);
+    height: calc(var(--uib-size) * 0.6);
+  }
+  
+  .cube {
+    flex-shrink: 0;
+    width: calc(var(--uib-size) * 0.2);
+    height: calc(var(--uib-size) * 0.2);
+    animation: jump var(--uib-speed) ease-in-out infinite;
+  }
+  
+  .cube__inner {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+    background-color: var(--uib-color);
+    transform-origin: center bottom;
+    animation: morph var(--uib-speed) ease-in-out infinite;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cube:nth-child(2) {
+    animation-delay: calc(var(--uib-speed) * -0.36);
+  }
+  .cube:nth-child(2) .cube__inner {
+    animation-delay: calc(var(--uib-speed) * -0.36);
+  }
+  .cube:nth-child(3) {
+    animation-delay: calc(var(--uib-speed) * -0.2);
+  }
+  .cube:nth-child(3) .cube__inner {
+    animation-delay: calc(var(--uib-speed) * -0.2);
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0px);
+    }
+    30% {
+      transform: translateY(0px);
+      animation-timing-function: ease-out;
+    }
+    50% {
+      transform: translateY(-200%);
+      animation-timing-function: ease-in;
+    }
+    75% {
+      transform: translateY(0px);
+      animation-timing-function: ease-in;
+    }
+  }
+  
+  @keyframes morph {
+    0%, 10% {
+      transform: scaleY(1);
+    }
+    20%, 25% {
+      transform: scaleY(0.6) scaleX(1.3);
+      animation-timing-function: ease-in-out;
+    }
+    30% {
+      transform: scaleY(1.15) scaleX(0.9);
+      animation-timing-function: ease-in-out;
+    }
+    40%, 70%, 85%, 100% {
+      transform: scaleY(1);
+    }
+    75% {
+      transform: scaleY(0.8) scaleX(1.2);
+    }
+  }
+
+
+
+
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-slide {
+    animation: slide 20s linear infinite;
+    display: flex;
+    width: max-content;
+  }
+  
+  
+  
+  
+  

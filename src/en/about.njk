@@ -1,0 +1,53 @@
+---
+layout: "base.njk"
+title: "ABOUT ME"
+---
+
+<div>
+    <div class="items-center flex justify-center md:mt-20 mt-10 ">
+        <h1 class="font-mont md:text-8xl text-4xl">
+            ABOUT ME
+        </h1>
+    </div>
+      
+      
+      
+      
+      
+      
+    <div class="md:mt-20 mt-10 md:text-2xl text-lg mr-5 ml-5  md:mr-10 md:ml-10">
+        I'm Dávid, a visual designer and creative strategist with a passion for storytelling through photography, video, and design based in Transylvania. I specialize in building digital identities and campaigns.
+    </div>
+    <div class="md:mt-20 mt-10">
+        <section class="bg-black text-white ">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Image -->
+                <div class="aspect-square rounded-2xl overflow-hidden">
+                  <img src="/assets/aboutme/photo1.jpg" alt="About Me" class="w-full h-full object-cover">
+                </div>
+          
+                <!-- Text Block -->
+                <div>
+                  <h2 class="text-red-600 text-lg font-medium mb-2">01</h2>
+                  <h3 class="text-4xl font-bold font-mont leading-snug mb-4">My Creative Approach</h3>
+                  <p class="text-xl leading-relaxed text-zinc-300">
+                    Every project I take on blends cinematic visuals with emotional storytelling. I create bold content that stands out — whether it's through photography, film, or design.
+                  </p>
+                  <p class="text-xl leading-relaxed text-zinc-300 mt-4">
+                    My goal? To deliver tools, stories, and visuals that don't just look good, but feel intentional and push creative boundaries.
+                  </p>
+                </div>
+          
+              </div>
+            </div>
+          </section>          
+    </div>
+    <div>
+        {% include "creative-tools.njk" %}
+    </div>
+    <div class="hidden">
+        {% include "featuredhero.njk" %}
+    </div>
+</div>

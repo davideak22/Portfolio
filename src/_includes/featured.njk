@@ -1,0 +1,48 @@
+<div class="group relative rounded-3xl overflow-hidden shadow-lg bg-neutral-900 text-white max-w-xl mx-auto">
+    <a href="{{url}}">
+        <!-- Responsive Image with hover zoom effect -->
+    <a href="{{url}}">
+        <div class="aspect-[4/3] w-full overflow-hidden">
+            <img
+              src="{{image}}"
+              alt="Project preview"
+              class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+            />
+          </div>
+    </a>
+
+  
+    <!-- Overlay gradient for text readability -->
+    <a href="{{url}}">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+
+    </a>
+    
+    <!-- Content block -->
+    <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+      <div>
+        <!-- Category badge -->
+        <div class="inline-block bg-white text-black text-xs font-semibold px-3 py-1 rounded-full mb-2 shadow-md">
+          {{type}}
+        </div>
+  
+        <!-- Title -->
+        <div class="text-xl md:text-2xl font-semibold font-mont uppercase tracking-tight leading-snug">
+          <a href="{{url}}">{{title}}</a>
+        </div>
+      </div>
+  
+      <!-- View project button -->
+      <a
+        href="{{url}}"
+        class="text-sm font-medium text-white hover:underline flex items-center gap-1 opacity-80 hover:opacity-100 transition"
+      >
+        <span>View Project</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+    </a>
+</div>
+  

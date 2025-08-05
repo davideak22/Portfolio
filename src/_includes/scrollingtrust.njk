@@ -1,0 +1,40 @@
+<div class="bg-black px-6 py-4">
+    <!-- Heading ABOVE on small screens, inline on md+ -->
+    <div class="flex flex-col md:flex-row items-center md:gap-8">
+      
+      <!-- Heading block -->
+      <div class="text-white text-2xl sm:text-3xl font-light font-sans mb-4 md:mb-0 md:shrink-0">
+        <span class="block text-center md:text-left">
+          <span class="brightness-80">Trusted by</span> <span class="font-bold">many</span>
+        </span>
+      </div>
+  
+      <!-- Slider -->
+      <div class="slider-container relative overflow-hidden w-full py-6 ">
+        <!-- Gradient sides -->
+        <div class="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-black to-transparent z-10 pointer-events-none"></div>
+  
+        <!-- Track -->
+        <div class="slider-track flex w-max animate-slide gap-16">
+          <img src="/assets/projects/thebase.png" alt="Logo" class="h-20 opacity-60 hover:opacity-100 transition" />
+          <img src="/assets/projects/Tabako.png" alt="Logo" class="h-20 opacity-60 hover:opacity-100 transition" />
+          <img src="/assets/projects/siff.png" alt="Logo" class="h-20 opacity-60 hover:opacity-100 transition" />
+          <img src="/assets/projects/mikes.png" alt="Logo" class="h-20 opacity-60 hover:opacity-100 transition" />
+          <!-- duplicated for loop effect -->
+          <img src="/assets/projects/babes.png" alt="Logo" class="h-20 opacity-60 hover:opacity-100 transition" />
+          <img src="/assets/projects/makosz.jpg" alt="Logo" class="h-20 opacity-60 hover:opacity-100 transition" />
+          <img src="/assets/projects/elsosegely.png" alt="Logo" class="h-20 opacity-60 hover:opacity-100 transition" />
+          <img src="/assets/projects/artsamurai.png" alt="Logo" class="h-20 opacity-60 hover:opacity-100 transition" />
+        </div>
+      </div>
+    </div>
+  
+    <!-- JS: duplicate slider for seamless looping -->
+    <script>
+      const track = document.querySelector('.slider-track');
+      track.innerHTML += track.innerHTML; // perfect seamless loop
+      document.querySelector('.slider-track').innerHTML += document.querySelector('.slider-track').innerHTML;
+    </script>
+  </div>
+  

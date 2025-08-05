@@ -1,0 +1,39 @@
+<div class="rounded-xl overflow-hidden bg-black text-white group relative">
+    <a href="{{ url }}" class="block w-full h-[250px] overflow-hidden rounded-xl relative">
+        <!-- The Image -->
+        <img 
+          src="{{ image }}" 
+          alt="{{ title }}" 
+          class="w-full h-full object-cover transition duration-300 ease-in-out group-hover:blur-sm"
+        />
+    
+        <!-- Hover Text Overlay -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+          <span class="text-white font-mono text-sm sm:text-base bg-black/40 px-4 py-1 rounded-lg">
+            ( ALL DETAILS )
+          </span>
+        </div>
+      </a>
+  
+    <div class="flex justify-between items-center px-4 py-3 sm:px-6 sm:py-4">
+        <!-- LEFT SIDE: Title + Location inline, vertically centered -->
+        <a href="{{url}}">
+            <div class="flex items-center gap-4 font-mono">
+                <h2 class="text-lg sm:text-xl font-semibold tracking-tight uppercase">
+                  {{ title }}
+                </h2>
+                <p class="text-base sm:text-lg text-gray-400">
+                  {{ location }}
+                </p>
+              </div>
+        </a>
+    
+        <!-- RIGHT SIDE: Year, vertically aligned with title/location -->
+        <a href="{{url}}">
+            <div class="text-sm sm:text-base text-gray-400 font-mono">
+                {{ date | projectDate }}
+              </div>
+            </div>
+        </a>
+  </div>
+  

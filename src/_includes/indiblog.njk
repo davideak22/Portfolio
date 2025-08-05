@@ -1,0 +1,25 @@
+---
+layout: "base.njk"
+---
+<div class="lg:ml-42 lg:mr-42 ml-10 mr-10">
+    <div class="flex items-center justify-center ">
+        <img src="{{ image }}" alt="" class="h-[450px] w-[1000px] object-cover rounded-xl" />
+      </div>
+      
+    <div class="mt-8">
+        By<a href="/en/about" rel="author"> {{author}} </a> /
+        <time datetime="{{ date }}">
+            {{ date | postDate}}
+        </time>
+    </div>
+    <div class="text-6xl">   
+        {{ title }}
+    </div> 
+    <div class="w-16 h-1 bg-red-600 mt-4  ml-0 rounded-full"></div>
+    <div class="mt-6 prose prose-lg prose-invert max-w-none prose-red">
+        <article>
+          {{ content | safe }}
+        </article>
+      </div>
+      
+</div>

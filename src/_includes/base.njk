@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if title %}{{ title }} - {% endif %}DEAK DAVID</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/favicon.png" type="image/png">
+    <meta name="description" content="{{ description or 'Creative Portfolio of Deak David' }}">
+</head>
+<body class="bg-black text-white ">
+    <div id="loader" class="fixed h-screen inset-0 z-50 bg-black flex items-center justify-center">
+        <div class="container">
+          <div class="cube"><div class="cube__inner"></div></div>
+          <div class="cube"><div class="cube__inner"></div></div>
+          <div class="cube"><div class="cube__inner"></div></div>
+        </div>
+      </div>
+    
+    <div id="main" class="lg:ml-42 lg:mr-42 ml-10 mr-10 flex flex-col min-h-screen z-0 ">
+        <!-- Header -->
+        <div >
+            {% include "header.njk" %}
+        </div>
+
+        <!-- Page Content -->
+        <main class="flex-grow">
+            {{ content | safe }}
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-10">
+            {% include "footer.njk" %}
+        </footer>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+          document.getElementById('loader').style.display = 'none';
+          document.getElementById('main').classList.remove('invisible');
+        });
+      </script>
+</body>
+
+</html>

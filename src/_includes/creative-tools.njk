@@ -1,0 +1,50 @@
+<section class="py-20 bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+  
+        <!-- LEFT: Heading + Toolbox -->
+        <div class="text-center md:text-left">
+          <h2 class="text-4xl sm:text-5xl font-bold leading-tight">
+            <span class="text-red-600 block">Services that</span>
+            <span class="text-white">shape your story.</span>
+          </h2>
+  
+          <p class="mt-6 text-lg font-semibold">My creative toolbox</p>
+          <div class="mt-4 flex justify-center md:justify-start flex-wrap gap-4">
+            {% set tools = ['Pr', 'Ae', 'Ps', 'Lr', 'Id', 'N'] %}
+            {% for tool in tools %}
+              <div class="w-10 h-10 flex items-center justify-center bg-white text-black rounded-xl shadow-md font-bold">
+                {{ tool }}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+  
+        <!-- RIGHT: Services -->
+      <ul class="space-y-6 text-left text-lg font-medium max-w-md mx-auto md:mx-0">
+        {% set services = [
+          "Cinematography / Directing",
+          "Creative Direction & Shot Planning",
+          "Video Editing & Motion Design",
+          "Color Grading & Lookbuilding",
+          "Photography & Retouching",
+          "Sound Design & Audio Polish",
+          "Design & Layout for Print/Digital"
+        ] %}
+
+        {% for service in services %}
+          <li class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md text-black">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 3a1 1 0 01.894.553l5 10a1 1 0 01-.894 1.447H5a1 1 0 01-.894-1.447l5-10A1 1 0 0110 3z"/>
+              </svg>
+            </div>
+            <span>{{ service }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+
+  
+      </div>
+    </div>
+  </section>

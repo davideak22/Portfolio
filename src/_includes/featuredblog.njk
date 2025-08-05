@@ -1,0 +1,46 @@
+<div>
+    <section class="pt-12 pb-8 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <!-- Header -->
+          <div class="mb-10 flex flex-col sm:flex-row items-center justify-between">
+            <h2 class="text-5xl font-bold leading-tight text-center sm:text-left">
+                <span class="text-red-600">Curated Insights &</span><br />
+                creative resources.
+              </h2>
+              
+            <a href="/en/blog" class="group relative inline-block mt-4 sm:mt-0 text-white text-lg font-medium transition">
+                <span>View All</span>
+              
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 inline-block ml-1 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19l14-14M13 5h6v6" />
+                </svg>
+              
+                <!-- Underline animation -->
+                <span
+                  class="block h-[2px] w-full bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left mt-1"
+                ></span>
+              </a>
+              
+          </div>
+      
+          <!-- Featured Blog Card -->
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-10">
+            {%- for featuredblog in collections.featuredblog | reverse -%}  
+                {% set title = featuredblog.data.title %}
+                {% set description = featuredblog.data.description %}
+                {% set image = featuredblog.data.image %}
+                {% set url = featuredblog.url %} 
+                {% include "blogcard.njk" %}  
+            {%- endfor -%}
+          </div>
+      
+        </div>
+      </section>      
+</div>

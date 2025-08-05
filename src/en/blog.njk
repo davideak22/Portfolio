@@ -1,0 +1,32 @@
+---
+title: BLOG
+layout: "base.njk"
+---
+
+  <div class="">
+
+
+    <!-- Hero Image that breaks out of layout margins -->
+    <div class="flex items-center justify-center">
+        <div class="lg:-mx-42 w-screen overflow-hidden brightness-50 z-0">
+            <img src="/assets/blog/deakdavid-1428.jpg" alt="street photo" class="w-full md:h-[400px] h-[300px] object-cover" />
+        </div>
+        <div class="absolute text-8xl flex font-mont items-center justify-center z-10">
+            BLOG
+        </div>
+    </div>
+  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-10 items-center justify-center">
+    {%- for post in collections.post | reverse -%}  
+      {% set title = post.data.title %}
+      {% set description = post.data.description %}
+      {% set image = post.data.image %}
+      {% set url = post.url %} 
+      {% include "blogcard.njk" %}  
+    {%- endfor -%}
+  </div>
+    
+      
+
+    
+
+  </div>
