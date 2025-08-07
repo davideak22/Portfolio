@@ -4,10 +4,11 @@ date: 2025-02-22T20:00:00.000+02:00
 tags:
   - projects
   - featured
-description: Mikes Maturándusz 2025
+description: Mikes Maturándusz
 location: RO
 image: /assets/uploads/mikes-matur-banner.jpg
-type: Photo/Video
+type:
+  - Photo/Video/Design
 layout: indiblog.njk
 ---
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
