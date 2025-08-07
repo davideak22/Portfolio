@@ -1,5 +1,6 @@
 ---
 title: Mikes Maturándusz 2025
+author: Deak David
 date: 2025-02-22T20:00:00.000+02:00
 tags:
   - projects
