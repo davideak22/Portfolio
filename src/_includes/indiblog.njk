@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
 ---
-<div class="lg:ml-42 lg:mr-42">
+<div class="lg:ml-42 lg:mr-42 -ml-5 -mr-5">
     <div class="flex items-center justify-center ">
         <img src="{{ image }}" alt="" class="h-[450px] w-[1000px] object-cover rounded-xl" />
       </div>
@@ -12,7 +12,7 @@ layout: "base.njk"
             {{ date | postDate}}
         </time>
     </div>
-    <div class="text-6xl">   
+    <div class="md:text-6xl text-4xl flex ">   
         {{ title }}
     </div> 
     <div class="w-16 h-1 bg-red-600 mt-4  ml-0 rounded-full"></div>
