@@ -21,3 +21,19 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
       - { label: "Body", name: "body", widget: "markdown" }
+  
+  - name: "projects"
+    label: "Projects"
+    folder: "src/en/projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["projects"] }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Location", name: "location", widget: "string", default: "RO" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Type", name: "type", widget: "list", default: ["Photo/Video"] }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
+      - { label: "Body", name: "body", widget: "markdown" }
