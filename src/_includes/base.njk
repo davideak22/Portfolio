@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/favicon.png" type="image/png">
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <meta name="description" content="{{ description or 'Creative Portfolio of Deak David' }}">
 </head>
 <body class="bg-black text-white ">
@@ -41,17 +41,15 @@
           document.getElementById('main').classList.remove('invisible');
         });
 
-        window.addEventListener('DOMContentLoaded', () => {
-          if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", (user) => {
-              if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                  document.location.href = "/admin/";
-                });
-              }
-            });
-          }
-        });
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", (user) => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
       </script>
 </body>
 
