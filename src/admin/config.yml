@@ -4,8 +4,7 @@ backend:
 
 media_folder: "src/assets/uploads"   # store in source, not build
 public_folder: "/assets/uploads"
-media_library:
-  name: default
+
 
 collections:
   - name: "blog"
