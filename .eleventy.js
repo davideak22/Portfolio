@@ -4,7 +4,7 @@ module. exports = function (eleventyConfig){
     eleventyConfig.addPassthroughCopy("./src/photo2.jpg");
     eleventyConfig.addPassthroughCopy("./src/photo3.jpg");
     eleventyConfig.addPassthroughCopy("./src/assets");
-    eleventyConfig.addPassthroughCopy("./src/admin");
+    eleventyConfig.addPassthroughCopy("./src/en/admin");
 
     eleventyConfig.addFilter("postDate", (dateObj) => {
         // Can use toLocaleString the same way we were before
