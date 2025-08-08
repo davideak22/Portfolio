@@ -44,12 +44,12 @@ Screenshot of folder structure.
 4.1. Why Update the Build Script?
 Explain Netlify needs a build script to know how to compile your site.
 4.2. How to Change It.  
-'''
+```
 "scripts": {
   "start": "eleventy --serve",
   "build": "eleventy"
 }
-'''  
+```  
 Note: start is for local development, build is for Netlify deployment.
 # 5. Upload to GitHub in Minutes
 5.1. Create a New Repository
