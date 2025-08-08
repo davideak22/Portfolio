@@ -169,5 +169,5 @@ Now you can share your portfolio link with anyone. Send it to potential clients,
 
 You just built and deployed a complete portfolio website without coding or spending a single cent. All it took was ChatGPT-5 to generate the site, GitHub to store it, and Netlify to host it.
 
-I would love to see what you created. If you follow this tutorial and launch your own portfolio, share the link with me. Post it in the comments, tag me on social media, or send it directly. It is always inspiring to see how others customize their sites.
+I would love to see what you created. If you follow this tutorial and launch your own portfolio, share the link with me. Tag me on social media, or send it directly. It is always inspiring to see how others customize their sites.
 
