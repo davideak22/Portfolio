@@ -35,7 +35,7 @@ Scope of Work
 </div>
 
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 mt-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 not-prose mt-10">
   <div class="aspect-[4/5]">
       <img src="/assets/uploads/D03ACDFC-0CE3-42AA-8DDB-698656099AED.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full ">
   </div>
