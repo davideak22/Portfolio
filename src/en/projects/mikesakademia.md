@@ -4,7 +4,6 @@ author: Deak David
 date: 2024-05-10
 tags:
   - projects
-  - featured
 description: The Mikes Akadémia is a student-organized event by high school students in Sepsiszentgyörgy that combines health education with a first aid competition, and with the goal of engaging kids in both learning and practicing life-saving techniques.
 location: RO
 image: /assets/uploads/mikesakademia.jpg
