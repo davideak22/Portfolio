@@ -20,25 +20,28 @@ The main goal of the conference is to help university students who speak Hungari
 Scope of Work  
 {{type}}
 
-<div style="background:black;padding:10px 0;">
-  <div style="position:relative;aspect-ratio:9/16;height:88vh;max-width:calc(88vh * 9 / 16);margin:0 auto;">
-    <iframe
-      src="https://www.youtube.com/embed/yg2UUyUCQLU?modestbranding=1&rel=0&playsinline=1"
-      style="width:100%;height:100%;border:0;"
-      title="YouTube Shorts video player"
-      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+<div class="grid grid-cols-1 gap-6">
+  <div class="bg-black py-2.5">
+    <div class="relative aspect-[9/16] h-[80vh] max-w-[calc(80vh*9/16)] mx-auto">
+      <iframe
+        src="https://www.youtube.com/embed/6_7rGzbtJos?modestbranding=1&rel=0&playsinline=1"
+        class="w-full h-full border-0 rounded-xl"
+        title="YouTube Shorts video player"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
   </div>
-</div>
-<div style="background:black;padding:10px 0;">
-  <div style="position:relative;aspect-ratio:9/16;height:88vh;max-width:calc(88vh * 9 / 16);margin:0 auto;">
-    <iframe
-      src="https://www.youtube.com/embed/yg2UUyUCQLU?modestbranding=1&rel=0&playsinline=1"
-      style="width:100%;height:100%;border:0;"
-      title="YouTube Shorts video player"
-      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+
+  <div class="bg-black py-2.5">
+    <div class="relative aspect-[9/16] h-[80vh] max-w-[calc(80vh*9/16)] mx-auto">
+      <iframe
+        src="https://www.youtube.com/embed/pPFHJSi3-ss"
+        class="w-full h-full border-0 rounded-xl"
+        title="YouTube Shorts video player"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
   </div>
 </div>
