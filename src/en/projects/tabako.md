@@ -131,3 +131,6 @@ Scope of Work
     ></iframe>
   </div>
 </div>
+<div>
+<img src="/assets/uploads/tabako2025_facebook.jpg" alt="Üzemszünet facebook post">
+</div>
