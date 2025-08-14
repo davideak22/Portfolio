@@ -2,6 +2,9 @@ backend:
   name: git-gateway        # use this only on Netlify (with Identity + Git Gateway)
   branch: main
 
+eleventyExcludeFromCollections: true
+noindex: true
+
 media_folder: "src/assets/uploads"   # store in source, not build
 public_folder: "/assets/uploads"
 

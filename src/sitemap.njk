@@ -1,0 +1,28 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- set pages = collections.all
+  | rejectattr("data.draft", "truthy")
+  | rejectattr("data.noindex", "truthy")
+  | sort(true, true, "date") -%}
+{%- for page in pages -%}
+  {%- set url = (page.url or '') | lower -%}
+
+  {# exclude /admin, /admin/, and anything under /admin/ #}
+  {%- set first6 = url | truncate(6, true, '') -%}
+  {%- set first7 = url | truncate(7, true, '') -%}
+  {%- set isAdmin = (url == '/admin') or (url == '/admin/') or (first7 == '/admin/') -%}
+
+  {%- if not isAdmin -%}
+    <url>
+      <loc>{{ site.url }}{{ page.url | url }}</loc>
+      {%- if page.data.updated or page.date -%}
+      <lastmod>{{ (page.data.updated or page.date) }}</lastmod>
+      {%- endif -%}
+    </url>
+  {%- endif -%}
+{%- endfor -%}
+</urlset>
