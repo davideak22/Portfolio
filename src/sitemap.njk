@@ -20,7 +20,7 @@ eleventyExcludeFromCollections: true
     <url>
       <loc>{{ site.url }}{{ page.url | url }}</loc>
       {%- if page.data.updated or page.date -%}
-      <lastmod>{{ (page.data.updated or page.date) }}</lastmod>
+      <lastmod>{{ (page.data.updated or page.date).toISOString() }}</lastmod>
       {%- endif -%}
     </url>
   {%- endif -%}
