@@ -29,6 +29,7 @@ Scope of Work
         title="YouTube Shorts video player"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
+        loading="lazy"
       ></iframe>
     </div>
   </div>
@@ -41,6 +42,7 @@ Scope of Work
         title="YouTube Shorts video player"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
+        loading="lazy"
       ></iframe>
     </div>
   </div>

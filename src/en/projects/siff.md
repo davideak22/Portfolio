@@ -15,18 +15,18 @@ The SIFF – Sepsiszentgyörgyi Ifjúsági Fórum is a youth community organizat
 Scope of Work  
 {{type}}
 
-<img src="/assets/uploads/siff/siff logo 4v3_page-0002.jpg" alt="siff bevezeto">
-<img src="/assets/uploads/siff/siff logo 4v3_page-0003.jpg" alt="siff bevezeto">
-<img src="/assets/uploads/siff/siff logo 4v3_page-0004.jpg" alt="siff bevezeto">
-<img src="/assets/uploads/siff/siff logo 4v3_page-0005.jpg" alt="siff bevezeto">
-<img src="/assets/uploads/siff/siff logo 4v3_page-0006.jpg" alt="siff bevezeto">
-<img src="/assets/uploads/siff/siff logo 4v3_page-0007.jpg" alt="siff bevezeto">
-<img src="/assets/uploads/siff/siff logo 4v3_page-0008.jpg" alt="siff bevezeto">
-<img src="/assets/uploads/siff/siff logo 4v3_page-0009.jpg" alt="siff bevezeto">
-<img src="/assets/uploads/siff/siff logo 4v3_page-0010.jpg" alt="siff bevezeto">
-<img src="/assets/uploads/siff/siff logo 4v3_page-0011.jpg" alt="siff bevezeto">
-<img src="/assets/uploads/siff/siff logo 4v3_page-0012.jpg" alt="siff bevezeto">
-<img src="/assets/uploads/siff/siff logo 4v3_page-0013.jpg" alt="siff bevezeto">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0002.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0003.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0004.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0005.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0006.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0007.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0008.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0009.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0010.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0011.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0012.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
+<img src="/assets/uploads/siff/siff logo 4v3_page-0013.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
 
 
 

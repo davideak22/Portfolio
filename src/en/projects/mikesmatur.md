@@ -19,21 +19,21 @@ Scope of Work
 {{type}}
 <br></br>
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/Wi8LjhG1RC0?si=KcE6jb4y0UrBKjmt" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Wi8LjhG1RC0?si=KcE6jb4y0UrBKjmt" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
 </div>
 <br></br>
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/V8F5Tu87AkE?si=neElYKuKYLUmWTz7" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/V8F5Tu87AkE?si=neElYKuKYLUmWTz7" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
 </div>
 <br></br>
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/RfYzNeNSQUs?si=JAnzyOMfZNy2a5ZH" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/RfYzNeNSQUs?si=JAnzyOMfZNy2a5ZH" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
 </div>
 <br></br>
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/RSCCGg07xYo?si=EUfv2tbWFkkt-DNz" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/RSCCGg07xYo?si=EUfv2tbWFkkt-DNz" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
 </div>
 <br></br>
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/xjb7rAZ9e5w?si=jImYeRhof5u7pw63" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/xjb7rAZ9e5w?si=jImYeRhof5u7pw63" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
 </div>

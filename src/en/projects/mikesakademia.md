@@ -37,18 +37,18 @@ Scope of Work
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 not-prose mt-10">
   <div class="aspect-[4/5]">
-      <img src="/assets/uploads/D03ACDFC-0CE3-42AA-8DDB-698656099AED.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full ">
+      <img src="/assets/uploads/D03ACDFC-0CE3-42AA-8DDB-698656099AED.jpg"  alt="Judge writing notes" class="rounded-xl w-full h-full " decoding="async" loading="lazy">
   </div>
 
   <div class="aspect-[4/5]">
-      <img src="/assets/uploads/D77F3403-6F76-4261-BA42-9051250874F1.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full">
+      <img src="/assets/uploads/D77F3403-6F76-4261-BA42-9051250874F1.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full" decoding="async" loading="lazy">
   </div>
   <div class="aspect-[4/5]">
-      <img src="/assets/uploads/DeakDavid-5.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full">
+      <img src="/assets/uploads/DeakDavid-5.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full" decoding="async" loading="lazy">
   </div>
 
   <div class="aspect-[4/5]">
-      <img src="/assets/uploads/7EEFD122-BAB7-44E1-BD25-F2D6E05DEB0F.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full">
+      <img src="/assets/uploads/7EEFD122-BAB7-44E1-BD25-F2D6E05DEB0F.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full" decoding="async" loading="lazy">
   </div>
 </div>
 
