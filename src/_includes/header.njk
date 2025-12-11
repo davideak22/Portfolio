@@ -1,3 +1,5 @@
+
+
 <header class="w-full text-white px-10 py-6 bg-black relative z-50">
   <nav class="flex items-center justify-between max-w-6xl mx-auto">
     <a href="/" class="text-lg font-black font-mont">David Deak</a>
@@ -5,18 +7,18 @@
     <div class="flex items-center gap-6">
       <!-- Navigation links -->
       <ul class="hidden flex-col gap-4 mt-4 md:flex md:flex-row md:gap-8 md:mt-0 text-lg">
-        <li><a href="/" class="hover:brightness-100 brightness-80 transition ease-in-out">Home</a></li>
-        <li><a href="/en/blog" class="hover:brightness-100 brightness-80 transition ease-in-out">Blog</a></li>
-        <li><a href="/en/projects" class="hover:brightness-100 brightness-80 transition ease-in-out">Projects</a></li>
-        <li><a href="/en/about" class="hover:brightness-100 brightness-80 transition ease-in-out">About me</a></li>
+        <li><a href="/{{locale}}" class="hover:brightness-100 brightness-80 transition ease-in-out">{{ 'navbar.home' | i18n }}</a></li>
+        <li><a href="/{{locale}}/{{ 'slugs.blog' | i18n }}" class="hover:brightness-100 brightness-80 transition ease-in-out">{{ 'navbar.blog' | i18n }}</a></li>
+        <li><a href="/{{locale}}/{{ 'slugs.projects' | i18n }}" class="hover:brightness-100 brightness-80 transition ease-in-out">{{ 'navbar.projects' | i18n }}</a></li>
+        <li><a href="/{{locale}}/{{ 'slugs.aboutme' | i18n }}" class="hover:brightness-100 brightness-80 transition ease-in-out">{{ 'navbar.aboutme' | i18n }}</a></li>
       </ul>
       <!-- Mobile Nav Container -->
       <div id="mobile-nav" class="hidden rounded-lg md:hidden flex-col gap-4 -mt-2 text-lg absolute top-full left-0 mx-4 w-[calc(100%-2rem)] bg-black px-10 py-4 z-40 border border-white brightness-70 shadow-sm">
         <ul class="flex flex-col md:flex-row gap-4 md:gap-8">
-          <li><a href="/" class="block px-3 py-2 rounded-sm hover:bg-gray-700">Home</a></li>
-          <li><a href="/en/blog" class="block px-3 py-2 rounded-sm hover:bg-gray-700t">Blog</a></li>
-          <li><a href="/en/projects" class="block px-3 py-2 rounded-sm hover:bg-gray-700">Projects</a></li>
-          <li><a href="/en/about" class="block px-3 py-2 rounded-sm hover:bg-gray-700">About me</a></li>
+          <li><a href="/{{locale}}" class="block px-3 py-2 rounded-sm hover:bg-gray-700">{{ 'navbar.home' | i18n }}</a></li>
+          <li><a href="/{{locale}}/{{ 'slugs.blog' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-gray-700t">{{ 'navbar.blog' | i18n }}</a></li>
+          <li><a href="/{{locale}}/{{ 'slugs.projects' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-gray-700">{{ 'navbar.projects' | i18n }}</a></li>
+          <li><a href="/{{locale}}/{{ 'slugs.aboutme' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-gray-700">{{ 'navbar.aboutme' | i18n }}</a></li>
         </ul>
       </div>
 
