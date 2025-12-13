@@ -1,0 +1,20 @@
+---
+layout: "base.njk"
+title: PROJECTS
+---
+
+<div>
+    <div class="mt-10 mb-10">
+        {% include "projectshero.njk" %}
+    </div>
+    <div class="mt-10">
+        {%- for projects in collections.projects | reverse -%}  
+            {% set title = projects.data.title %}
+            {% set location = projects.data.location %}
+            {% set image = projects.data.image or "/photo2.jpg" %}
+            {% set url = projects.url %} 
+            {% set date = projects.date %} 
+            {% include "projectscard.njk" %}  
+        {%- endfor -%}
+    </div>
+</div>
