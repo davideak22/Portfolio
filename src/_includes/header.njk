@@ -15,17 +15,17 @@
       <!-- Mobile Nav Container -->
       <div id="mobile-nav" class="hidden rounded-lg md:hidden flex-col gap-4 -mt-2 text-lg absolute top-full left-0 mx-4 w-[calc(100%-2rem)] bg-black px-10 py-4 z-40 border border-white brightness-70 shadow-sm">
         <ul class="flex flex-col md:flex-row gap-4 md:gap-8">
-          <li><a href="/{{locale}}" class="block px-3 py-2 rounded-sm hover:bg-gray-700">{{ 'navbar.home' | i18n }}</a></li>
-          <li><a href="/{{locale}}/{{ 'slugs.blog' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-gray-700t">{{ 'navbar.blog' | i18n }}</a></li>
-          <li><a href="/{{locale}}/{{ 'slugs.projects' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-gray-700">{{ 'navbar.projects' | i18n }}</a></li>
-          <li><a href="/{{locale}}/{{ 'slugs.aboutme' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-gray-700">{{ 'navbar.aboutme' | i18n }}</a></li>
+          <li><a href="/{{locale}}" class="block px-3 py-2 rounded-sm hover:bg-zinc-800">{{ 'navbar.home' | i18n }}</a></li>
+          <li><a href="/{{locale}}/{{ 'slugs.blog' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-zinc-800t">{{ 'navbar.blog' | i18n }}</a></li>
+          <li><a href="/{{locale}}/{{ 'slugs.projects' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-zinc-800">{{ 'navbar.projects' | i18n }}</a></li>
+          <li><a href="/{{locale}}/{{ 'slugs.aboutme' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-zinc-800">{{ 'navbar.aboutme' | i18n }}</a></li>
         </ul>
       </div>
 
 
       <!-- Language dropdown -->
       <div class="relative">
-        <button type="button" id="language-toggle" class="hidden inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-white rounded-lg cursor-pointer hover:bg-gray-700">
+        <button type="button" id="language-toggle" class="hidden inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-white rounded-lg cursor-pointer hover:bg-zinc-800">
           <svg class="w-5 h-5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3900 3900" fill="currentColor" aria-hidden="true">
             <path fill="#b22234" d="M0 0h7410v3900H0z"/>
             <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/>
@@ -35,10 +35,10 @@
         </button>
 
         <!-- Centered dropdown -->
-        <div id="language-dropdown" class="hidden absolute left-1/2 top-full mt-2 w-40 -translate-x-1/2 bg-gray-800 rounded-md shadow-lg z-50">
+        <div id="language-dropdown" class="hidden absolute left-1/2 top-full mt-2 w-40 -translate-x-1/2 bg-zinc-900 rounded-md shadow-lg z-50">
           <ul class="py-2 text-sm text-white">
             <li>
-              <a href="/hu" class="block px-4 py-2 hover:bg-gray-700 flex items-center">
+              <a href="/hu" class="block px-4 py-2 hover:bg-zinc-800 flex items-center">
                 <!-- Hungarian flag -->
                 <svg class="h-4 w-4 mr-2" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <defs>
@@ -56,7 +56,7 @@
               </a>
             </li>
             <li>
-              <a href="/ro" class="block px-4 py-2 hover:bg-gray-700 flex items-center">
+              <a href="/ro" class="block px-4 py-2 hover:bg-zinc-800 flex items-center">
                 <!-- Romanian flag -->
                 <svg class="h-4 w-4 mr-2" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <defs>
@@ -74,7 +74,7 @@
               </a>
             </li>
             <li>
-              <a href="/en" class="block px-4 py-2 hover:bg-gray-700 flex items-center">
+              <a href="/en" class="block px-4 py-2 hover:bg-zinc-800 flex items-center">
                 <!-- American flag -->
                 <svg class="w-4 h-4 mr-2 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3900 3900" fill="currentColor" aria-hidden="true">
                   <path fill="#b22234" d="M0 0h7410v3900H0z"/>
