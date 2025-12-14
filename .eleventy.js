@@ -8,7 +8,8 @@ module.exports = function (eleventyConfig) {
     defaultLanguage: 'en', 
     fallbackLocales: {
       'hu' : 'en',
-      'ro' : 'en'
+      'ro' : 'en',
+      "*": "en"
     }
   }); 
   

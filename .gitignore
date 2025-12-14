@@ -3,3 +3,4 @@ node_modules/
 
 # Ignore the public folder
 public/
+backup/

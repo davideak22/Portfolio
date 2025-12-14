@@ -323,10 +323,10 @@ module.exports = {
       'hu':'Neved',
       'ro':'Numele tău'
     },
-    mailok:{
+    emailcimmed:{
       'en':'Your email',
-      'en':'E-mail cím',
-      'en':'Emailul tău',
+      'hu':'E-mail cím',
+      'ro':'Emailul tău',
     },
     uzenetek:{
       'en':'Message',
@@ -353,5 +353,32 @@ module.exports = {
       'hu':'Vagy írj e-mailt erre a címre:',
       'ro':'Sau scrie-mi pe email la:'
     }
+  },
+  projectcard:{
+    alldetails:{
+      'en':'ALL DETAILS',
+      'hu':'MINDEN RÉSZLET',
+      'ro':'TOATE DETALIILE'
+    }
+  },
+  featured:{
+    viewproject:{
+      'en':'View Project',
+      'hu':'Megtekintés',
+      'ro':'Vezi proiectul'
+    }
+  },
+  errors: {
+  404: {
+    en: "Oops. This page doesn't exist.",
+    hu: "Hoppá. Ez az oldal nem létezik.",
+    ro: "Ups. Această pagină nu există."
+  },
+  backhome: {
+    en: "Go back home",
+    hu: "Vissza a főoldalra",
+    ro: "Înapoi la pagina principală"
   }
+}
+
 }
