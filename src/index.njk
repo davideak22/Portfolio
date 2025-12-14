@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="2; url=/en/">
+    <script>
+        const SUPPORTED_LANGS = ['hu', 'ro', 'en'];
+        const FALLBACK_LANG = 'en';
+
+        const userLang = (navigator.languages && navigator.languages[0] || navigator.language)
+                           .toLowerCase()
+                           .substring(0, 2);
+
+        let targetLang = FALLBACK_LANG;
+
+        if (SUPPORTED_LANGS.includes(userLang)) {
+            targetLang = userLang;
+        }
+
+        const targetPath = '/' + targetLang + '/';
+
+        window.location.replace(targetPath);
+    </script>
+</head>
+<body>
+    <p>Please wait, redirecting to your preferred language...</p>
+</body>
+</html>

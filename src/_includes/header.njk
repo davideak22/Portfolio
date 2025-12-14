@@ -1,3 +1,59 @@
+{% macro getFlag(lang) %}
+  {% set flag_html %}
+    {% if lang == 'hu' %}
+      <div class="h-4 w-4 mr-2 rounded-full overflow-hidden">
+        <svg class="h-full w-full object-cover" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+          <defs><clipPath id="flag-hu-{{ lang }}"><circle cx="16" cy="16" r="16"/></clipPath></defs>
+          <g clip-path="url(#flag-hu-{{ lang }})">
+            <rect y="0" width="32" height="10.66" fill="#CE1126"/>
+            <rect y="10.66" width="32" height="10.66" fill="#FFFFFF"/>
+            <rect y="21.33" width="32" height="10.66" fill="#008751"/>
+          </g>
+        </svg>
+      </div>
+      Magyar
+    {% elif lang == 'ro' %}
+      <div class="h-4 w-4 mr-2 rounded-full overflow-hidden">
+        <svg class="h-full w-full object-cover" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+          <defs><clipPath id="flag-ro-{{ lang }}"><circle cx="16" cy="16" r="16"/></clipPath></defs>
+          <g clip-path="url(#flag-ro-{{ lang }})">
+            <rect width="10.66" height="32" fill="#002B7F"/>
+            <rect x="10.66" width="10.66" height="32" fill="#FCD116"/>
+            <rect x="21.33" width="10.66" height="32" fill="#CE1126"/>
+          </g>
+        </svg>
+      </div>
+      Română
+    {% else %}
+      {# Default to English #}
+      <svg class="w-4 h-4 mr-2 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3900 3900" fill="currentColor" aria-hidden="true">
+        <path fill="#b22234" d="M0 0h7410v3900H0z"/>
+        <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/>
+        <path fill="#3c3b6e" d="M0 0h2964v2100H0z"/>
+      </svg>
+      English
+    {% endif %}
+  {% endset %}
+  {{ flag_html | safe }}
+{% endmacro %}
+
+{# -----------------------------------------
+   Detect locale from the current URL
+   -------------------------------------- #}
+{% set currentUrl = page.url or '/' %}
+
+{% if currentUrl.startsWith('/hu') %}
+  {% set locale = 'hu' %}
+{% elif currentUrl.startsWith('/ro') %}
+  {% set locale = 'ro' %}
+{% elif currentUrl.startsWith('/en') %}
+  {% set locale = 'en' %}
+{% else %}
+  {# Default locale when there's no prefix or unknown prefix #}
+  {% set locale = 'en' %}
+{% endif %}
+
+
 <header class="w-full text-white px-10 py-6 bg-black relative z-50">
   <nav class="flex items-center justify-between max-w-6xl mx-auto">
     <a href="/" class="text-lg font-black font-mont">David Deak</a>
@@ -5,38 +61,37 @@
     <div class="flex items-center gap-6">
       <!-- Navigation links -->
       <ul class="hidden flex-col gap-4 mt-4 md:flex md:flex-row md:gap-8 md:mt-0 text-lg">
-        <li><a href="/" class="hover:brightness-100 brightness-80 transition ease-in-out">Home</a></li>
-        <li><a href="/en/blog" class="hover:brightness-100 brightness-80 transition ease-in-out">Blog</a></li>
-        <li><a href="/en/projects" class="hover:brightness-100 brightness-80 transition ease-in-out">Projects</a></li>
-        <li><a href="/en/about" class="hover:brightness-100 brightness-80 transition ease-in-out">About me</a></li>
+        <li><a href="/{{ locale }}" class="hover:brightness-100 brightness-80 transition ease-in-out">{{ 'navbar.home' | i18n }}</a></li>
+        <li><a href="/{{ locale }}/{{ 'slugs.blog' | i18n }}" class="hover:brightness-100 brightness-80 transition ease-in-out">{{ 'navbar.blog' | i18n }}</a></li>
+        <li><a href="/{{ locale }}/{{ 'slugs.projects' | i18n }}" class="hover:brightness-100 brightness-80 transition ease-in-out">{{ 'navbar.projects' | i18n }}</a></li>
+        <li><a href="/{{ locale }}/{{ 'slugs.aboutme' | i18n }}" class="hover:brightness-100 brightness-80 transition ease-in-out">{{ 'navbar.aboutme' | i18n }}</a></li>
       </ul>
+
       <!-- Mobile Nav Container -->
       <div id="mobile-nav" class="hidden rounded-lg md:hidden flex-col gap-4 -mt-2 text-lg absolute top-full left-0 mx-4 w-[calc(100%-2rem)] bg-black px-10 py-4 z-40 border border-white brightness-70 shadow-sm">
         <ul class="flex flex-col md:flex-row gap-4 md:gap-8">
-          <li><a href="/" class="block px-3 py-2 rounded-sm hover:bg-gray-700">Home</a></li>
-          <li><a href="/en/blog" class="block px-3 py-2 rounded-sm hover:bg-gray-700t">Blog</a></li>
-          <li><a href="/en/projects" class="block px-3 py-2 rounded-sm hover:bg-gray-700">Projects</a></li>
-          <li><a href="/en/about" class="block px-3 py-2 rounded-sm hover:bg-gray-700">About me</a></li>
+          <li><a href="/{{ locale }}" class="block px-3 py-2 rounded-sm hover:bg-zinc-800">{{ 'navbar.home' | i18n }}</a></li>
+          <li><a href="/{{ locale }}/{{ 'slugs.blog' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-zinc-800t">{{ 'navbar.blog' | i18n }}</a></li>
+          <li><a href="/{{ locale }}/{{ 'slugs.projects' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-zinc-800">{{ 'navbar.projects' | i18n }}</a></li>
+          <li><a href="/{{ locale }}/{{ 'slugs.aboutme' | i18n }}" class="block px-3 py-2 rounded-sm hover:bg-zinc-800">{{ 'navbar.aboutme' | i18n }}</a></li>
         </ul>
       </div>
 
-
       <!-- Language dropdown -->
       <div class="relative">
-        <button type="button" id="language-toggle" class="hidden inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-white rounded-lg cursor-pointer hover:bg-gray-700">
-          <svg class="w-5 h-5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3900 3900" fill="currentColor" aria-hidden="true">
-            <path fill="#b22234" d="M0 0h7410v3900H0z"/>
-            <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/>
-            <path fill="#3c3b6e" d="M0 0h2964v2100H0z"/>
-          </svg>
-          English (US)
+        <button
+          type="button"
+          id="language-toggle"
+          class="hidden inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-white rounded-lg cursor-pointer hover:bg-zinc-800"
+        >
+          {{ getFlag(locale) }}
         </button>
 
         <!-- Centered dropdown -->
-        <div id="language-dropdown" class="hidden absolute left-1/2 top-full mt-2 w-40 -translate-x-1/2 bg-gray-800 rounded-md shadow-lg z-50">
+        <div id="language-dropdown" class="hidden absolute left-1/2 top-full mt-2 w-40 -translate-x-1/2 bg-zinc-900 rounded-md shadow-lg z-50">
           <ul class="py-2 text-sm text-white">
             <li>
-              <a href="/hu" class="block px-4 py-2 hover:bg-gray-700 flex items-center">
+              <a href="/hu" class="block px-4 py-2 hover:bg-zinc-800 flex items-center">
                 <!-- Hungarian flag -->
                 <svg class="h-4 w-4 mr-2" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <defs>
@@ -49,12 +104,12 @@
                     <rect y="10.66" width="32" height="10.66" fill="#FFFFFF"/>
                     <rect y="21.33" width="32" height="10.66" fill="#008751"/>
                   </g>
-                </svg>                                
+                </svg>
                 Magyar
               </a>
             </li>
             <li>
-              <a href="/ro" class="block px-4 py-2 hover:bg-gray-700 flex items-center">
+              <a href="/ro" class="block px-4 py-2 hover:bg-zinc-800 flex items-center">
                 <!-- Romanian flag -->
                 <svg class="h-4 w-4 mr-2" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <defs>
@@ -67,24 +122,25 @@
                     <rect x="10.66" width="10.66" height="32" fill="#FCD116"/>
                     <rect x="21.33" width="10.66" height="32" fill="#CE1126"/>
                   </g>
-                </svg>                
+                </svg>
                 Română
               </a>
             </li>
             <li>
-              <a href="/en" class="block px-4 py-2 hover:bg-gray-700 flex items-center">
+              <a href="/en" class="block px-4 py-2 hover:bg-zinc-800 flex items-center">
                 <!-- American flag -->
                 <svg class="w-4 h-4 mr-2 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3900 3900" fill="currentColor" aria-hidden="true">
                   <path fill="#b22234" d="M0 0h7410v3900H0z"/>
                   <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/>
                   <path fill="#3c3b6e" d="M0 0h2964v2100H0z"/>
-                </svg>                
+                </svg>
                 English
               </a>
-            </li>          
+            </li>
           </ul>
         </div>
       </div>
+
       <!-- Mobile menu toggle button -->
       <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -97,16 +153,12 @@
 
 <script>
   // Toggle the dropdown
-  document.getElementById('language-dropdown').addEventListener('click', function () {
-    const dropdown = document.getElementById('language-dropdown');
-    dropdown.classList.toggle('hidden');
-  });
-
   document.getElementById('language-toggle').addEventListener('click', function () {
     const dropdown = document.getElementById('language-dropdown');
     dropdown.classList.toggle('hidden');
   });
 
+  // Toggle mobile nav
   document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
     const mobileNav = document.getElementById('mobile-nav');
     mobileNav.classList.toggle('hidden');

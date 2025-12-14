@@ -5,11 +5,11 @@
         <!-- LEFT: Heading + Toolbox -->
         <div class="text-center md:text-left">
           <h2 class="text-4xl sm:text-5xl font-bold leading-tight">
-            <span class="text-red-600 block">Services that</span>
-            <span class="text-white">shape your story.</span>
+            <span class="text-red-600 block">{{'creativetools.title1' | i18n}} </span>
+            <span class="text-white">{{'creativetools.title2' | i18n}} </span>
           </h2>
   
-          <p class="mt-6 text-lg font-semibold">My creative toolbox</p>
+          <p class="mt-6 text-lg font-semibold">{{'creativetools.subtitle' | i18n}} </p>
           <div class="mt-4 flex justify-center md:justify-start flex-wrap gap-4">
             {% set tools = ['Pr', 'Ae', 'Ps', 'Lr', 'Id', 'VS'] %}
             {% for tool in tools %}
@@ -23,14 +23,15 @@
         <!-- RIGHT: Services -->
       <ul class="space-y-6 text-left text-lg font-medium max-w-md mx-auto md:mx-0">
         {% set services = [
-          "Cinematography / Directing",
-          "Creative Direction & Shot Planning",
-          "Video Editing & Motion Design",
-          "Color Grading & Lookbuilding",
-          "Photography & Retouching",
-          "Sound Design & Audio Polish",
-          "Design & Layout for Print/Digital"
-        ] %}
+  'creativetools.list1' | i18n,
+  'creativetools.list2' | i18n,
+  'creativetools.list3' | i18n,
+  'creativetools.list4' | i18n,
+  'creativetools.list5' | i18n,
+  'creativetools.list6' | i18n,
+  'creativetools.list7' | i18n
+] %}
+
 
         {% for service in services %}
           <li class="flex items-center gap-4">
@@ -44,7 +45,7 @@
         {% endfor %}
       </ul>
 
-  
+      
       </div>
     </div>
   </section>
