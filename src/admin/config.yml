@@ -10,24 +10,94 @@ public_folder: "/assets/uploads"
 
 
 collections:
-  - name: "blog"
-    label: "Blog"
+  # English blog (your original structure)
+  - name: "blog_en"
+    label: "Blog (English)"
     folder: "src/en/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
       - { label: "Body", name: "body", widget: "markdown" }
-  
-  - name: "projects"
-    label: "Projects"
+
+  # Hungarian blog  
+  - name: "blog_hu"
+    label: "Blog (Hungarian)"
+    folder: "src/hu/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # Romanian blog
+  - name: "blog_ro"
+    label: "Blog (Romanian)"
+    folder: "src/ro/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # English projects
+  - name: "projects_en"
+    label: "Projects (English)"
     folder: "src/en/projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["projects"] }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Location", name: "location", widget: "string", default: "RO" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Type", name: "type", widget: "list", default: ["Photo/Video"] }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # Hungarian projects  
+  - name: "projects_hu"
+    label: "Projects (Hungarian)"
+    folder: "src/hu/projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["projects"] }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Location", name: "location", widget: "string", default: "RO" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Type", name: "type", widget: "list", default: ["Photo/Video"] }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # Romanian projects
+  - name: "projects_ro"
+    label: "Projects (Romanian)"
+    folder: "src/ro/projects"
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
