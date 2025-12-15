@@ -5,7 +5,7 @@ description: Step-by-step guide to building a beautiful portfolio with ChatGPT-5
   and deploying it to Netlify using GitHub — fast, free, and beginner-friendly.
 image: /assets/uploads/chatgpt-5.jpg
 tags:
-  - post
+  - en_blog
   - featuredblog
 date: 2025-08-08T14:13:00.000+03:00
 layout: indiblog.njk

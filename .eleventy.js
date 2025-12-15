@@ -20,20 +20,22 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets");
     eleventyConfig.addPassthroughCopy("./src/admin");
     
-    eleventyConfig.addFilter("postDate", (dateObj) => {
-        // Can use toLocaleString the same way we were before
-        return dateObj.toLocaleString(undefined, {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        });
-      });
-      eleventyConfig.addFilter("projectDate", (dateObj) => {
-        // Can use toLocaleString the same way we were before
-        return dateObj.toLocaleString(undefined, {
-          year: "numeric",
-        });
-      });
+    eleventyConfig.addFilter("postDate", (dateObj, locale = "en") => {
+  if (!dateObj) return "";
+  return new Date(dateObj).toLocaleDateString(locale, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+});
+
+eleventyConfig.addFilter("projectDate", (dateObj, locale = "en") => {
+  if (!dateObj) return "";
+  return new Date(dateObj).toLocaleDateString(locale, {
+    year: "numeric",
+  });
+});
+
       
     return{
         dir: {

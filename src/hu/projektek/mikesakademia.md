@@ -3,8 +3,8 @@ title: Mikes Elsősegély Akadémia
 author: Deak David
 date: 2024-05-10
 tags:
-  - en_projects
-description: The Mikes Akadémia is a student-organized event by high school students in Sepsiszentgyörgy that combines health education with a first aid competition, and with the goal of engaging kids in both learning and practicing life-saving techniques.
+  - hu_projects
+description: A Mikes Akadémia egy középiskolások által szervezett diákesemény Sepsiszentgyörgyön, amely az egészségnevelést egy elsősegélynyújtó versennyel ötvözi, célja pedig az, hogy a gyerekeket aktívan bevonja az életmentő technikák elsajátításába és gyakorlásába.
 location: RO
 image: /assets/uploads/mikesakademia.jpg
 type:
@@ -12,9 +12,9 @@ type:
 layout: indiblog.njk
 ---
 
-The Mikes Akadémia is a student-organized event by high school students in Sepsiszentgyörgy that combines health education with a first aid competition, and with the goal of engaging kids in both learning and practicing life-saving techniques.
+A Mikes Akadémia egy középiskolások által szervezett diákesemény Sepsiszentgyörgyön, amely az egészségnevelést egy elsősegélynyújtó versennyel ötvözi. A rendezvény célja, hogy a gyerekeket aktívan bevonja az életmentő technikák elsajátításába és gyakorlati alkalmazásába.
 
-The program has two main parts. The first focuses on education, featuring a series of lectures and presentations led by doctors and other professionals on topics related to health, safety, and healthy living. The second is the competition itself, in which teams of four students put their skills to the test.
+A program két fő részből áll. Az első az oktatásra helyezi a hangsúlyt: orvosok és más szakemberek által tartott előadások és prezentációk foglalkoznak az egészséggel, biztonsággal és az egészséges életmóddal kapcsolatos témákkal. A második rész maga a verseny, ahol négyfős csapatok mérhetik össze tudásukat és gyakorlati készségeiket.
 
 Scope of Work  
 {{type}}
@@ -34,15 +34,15 @@ Scope of Work
 
 </div>
 
-
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 not-prose mt-10">
   <div class="aspect-[4/5]">
-      <img src="/assets/uploads/D03ACDFC-0CE3-42AA-8DDB-698656099AED.jpg"  alt="Judge writing notes" class="rounded-xl w-full h-full " decoding="async" loading="lazy">
+      <img src="/assets/uploads/D03ACDFC-0CE3-42AA-8DDB-698656099AED.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full" decoding="async" loading="lazy">
   </div>
 
   <div class="aspect-[4/5]">
       <img src="/assets/uploads/D77F3403-6F76-4261-BA42-9051250874F1.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full" decoding="async" loading="lazy">
   </div>
+
   <div class="aspect-[4/5]">
       <img src="/assets/uploads/DeakDavid-5.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full" decoding="async" loading="lazy">
   </div>
@@ -51,5 +51,3 @@ Scope of Work
       <img src="/assets/uploads/7EEFD122-BAB7-44E1-BD25-F2D6E05DEB0F.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full" decoding="async" loading="lazy">
   </div>
 </div>
-
-

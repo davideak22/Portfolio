@@ -1,9 +1,9 @@
 ---
-title: Sepsi Tabakó Festival
+title: Sepsi Tabakó Fesztivál
 author: Deak David
 date: 2024-08-29
-tags: [en_projects,en_featured]
-description: The Sepsi Tabakó Festival is a popular music festival event in Sepsiszentgyörgy, combining live music, art, and community. The festival, which was previously held in the city's old tobacco factory and is currently held at the Sepsi Duna Arena, offers top Hungarian and regional artists, creative activities, and an atmosphere that combines youthful energy with local pride. It's where music, culture, and friends come together to wrap up the summer in style.
+tags: [hu_projects,hu_featured]
+description: A Sepsi Tabakó Fesztivál Sepsiszentgyörgy egyik legnépszerűbb zenei fesztiválja, amely az élőzenét, a művészetet és a közösségi élményt ötvözi. A korábban a város régi dohánygyárában, jelenleg pedig a Sepsi Duna Arénában megrendezett esemény neves magyar és regionális előadókat, kreatív programokat, valamint fiatalos lendületet és helyi büszkeséget sugárzó hangulatot kínál. Itt találkozik a zene, a kultúra és a barátság, hogy stílusosan zárják a nyarat.
 image: /assets/uploads/tabako2024.jpg
 location: RO
 type: Video/Design
@@ -11,7 +11,7 @@ layout: "indiblog.njk"
 
 ---
 
-The Sepsi Tabakó Festival is a popular music festival event in Sepsiszentgyörgy, combining live music, art, and community. The festival, which was previously held in the city's old tobacco factory and is currently held at the Sepsi Duna Arena, offers top Hungarian and regional artists, creative activities, and an atmosphere that combines youthful energy with local pride. It's where music, culture, and friends come together to wrap up the summer in style.
+A Sepsi Tabakó Fesztivál Sepsiszentgyörgy egyik legnépszerűbb zenei eseménye, amely az élőzenét, a művészetet és a közösségi élményt ötvözi. A fesztivált korábban a város régi dohánygyárában rendezték meg, jelenleg pedig a Sepsi Duna Aréna ad otthont neki. A rendezvény neves magyar és regionális előadókat, kreatív programokat, valamint fiatalos energiát és helyi büszkeséget árasztó hangulatot kínál. Ez az a hely, ahol a zene, a kultúra és a barátok találkoznak, hogy méltó módon búcsúztassák a nyarat.
 
 Scope of Work  
 {{type}}

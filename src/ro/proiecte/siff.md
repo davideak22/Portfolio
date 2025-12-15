@@ -2,15 +2,15 @@
 title: SIFF
 author: Deak David
 date: 2025-06-10
-tags: [en_projects,en_featured]
-description: 
+tags: [ro_projects,ro_featured]
+description:
 image: /assets/uploads/siff_logo_facebook_cover_3.jpg
 location: RO
 type: Design
 layout: "indiblog.njk"
 ---
 
-The SIFF – Sepsiszentgyörgyi Ifjúsági Fórum is a youth community organization in Sepsiszentgyörgy dedicated to creating engaging and meaningful events for local young people. Through festivals, workshops, and cultural programs, SIFF creates opportunities for youth to express themselves, develop new skills, and take part in shaping the city’s social and cultural life.
+SIFF – Forumul de Tineret din Sfântu Gheorghe este o organizație de tineret dedicată comunității locale, având ca scop crearea unor evenimente relevante și captivante pentru tineri. Prin festivaluri, workshopuri și programe culturale, SIFF oferă tinerilor oportunități de exprimare, dezvoltare a unor noi abilități și implicare activă în modelarea vieții sociale și culturale a orașului.
 
 Scope of Work  
 {{type}}
@@ -27,7 +27,3 @@ Scope of Work
 <img src="/assets/uploads/siff/siff logo 4v3_page-0011.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
 <img src="/assets/uploads/siff/siff logo 4v3_page-0012.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
 <img src="/assets/uploads/siff/siff logo 4v3_page-0013.jpg" alt="siff bevezeto" decoding="async" loading="lazy">
-
-
-
-

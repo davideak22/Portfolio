@@ -1,15 +1,11 @@
 ---
-title: Saint George Days - The Base
+title: Zilele Sfântu Gheorghe – The Base
 author: Deak David
 date: 2025-05-10
 tags:
-  - en_projects
-  - en_featured
-description: The Base is a vibrant youth hub within the Saint George Days
-  festival, offers a mix of sports, games, music, and creative activities. It
-  attracts young, energetic visitors who are looking for a place to connect with
-  friends, try new experiences, and enjoy the festival atmosphere from morning
-  until late at night.
+  - ro_projects
+  - ro_featured
+description: The Base este un hub de tineret vibrant în cadrul festivalului Zilele Sfântu Gheorghe, oferind o combinație de sport, jocuri, muzică și activități creative. Atrage tineri energici care caută un loc unde să se întâlnească cu prietenii, să încerce experiențe noi și să se bucure de atmosfera festivalului de dimineața până târziu în noapte.
 location: RO
 image: /assets/uploads/480604432_581955941510293_5512170684252330505_n-1-.png
 type:
@@ -17,9 +13,9 @@ type:
 layout: indiblog.njk
 ---
 
-The Base is a vibrant youth hub within the Saint George Days festival, offers a mix of sports, games, music, and creative activities. It attracts young, energetic visitors who are looking for a place to connect with friends, try new experiences, and enjoy the festival atmosphere from morning until late at night.
+The Base este un hub de tineret vibrant în cadrul festivalului Zilele Sfântu Gheorghe, care oferă o combinație dinamică de sport, jocuri, muzică și activități creative. Spațiul atrage tineri energici aflați în căutarea unui loc unde să se conecteze cu prietenii, să descopere experiențe noi și să se bucure de atmosfera festivalului de dimineață până târziu în noapte.
 
-Located in the courtyard of the old tobacco factory, The Base blends urban industrial charm with playful energy. Visitors can enjoy activities like ping-pong, teqball, and table football, discover live street performances, or take part in interactive programs.
+Situat în curtea fostei fabrici de tutun, The Base îmbină farmecul industrial urban cu o energie jucăușă. Vizitatorii se pot bucura de activități precum tenis de masă, teqball sau fotbal de masă, pot descoperi spectacole stradale live sau pot lua parte la programe interactive.
 
 Scope of Work  
 {{type}}
@@ -57,7 +53,6 @@ Scope of Work
 <img src="/assets/uploads/base/Base nappali2_day3-34.jpg" class="rounded-xl" alt="Instagram feed design" decoding="async" loading="lazy">
 </div>
 </div>
-
 
 <img src="/assets/uploads/base/Realistic_Badge_Cards_Mockup.jpg" class="rounded-xl" alt="Badge designs" decoding="async" loading="lazy">
 

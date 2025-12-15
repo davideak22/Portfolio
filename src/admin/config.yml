@@ -24,7 +24,7 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "Deak David" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["en_blog"] }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -40,7 +40,7 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "Deak David" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["hu_blog"] }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -56,7 +56,7 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "Deak David" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["ro_blog"] }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -71,7 +71,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "Deak David" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["projects"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["en_projects"] }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Location", name: "location", widget: "string", default: "RO" }
       - { label: "Image", name: "image", widget: "image" }
@@ -82,14 +82,14 @@ collections:
   # Hungarian projects  
   - name: "projects_hu"
     label: "Projects (Hungarian)"
-    folder: "src/hu/projects"
+    folder: "src/hu/projektek"
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "Deak David" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["projects"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["hu_projects"] }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Location", name: "location", widget: "string", default: "RO" }
       - { label: "Image", name: "image", widget: "image" }
@@ -100,14 +100,14 @@ collections:
   # Romanian projects
   - name: "projects_ro"
     label: "Projects (Romanian)"
-    folder: "src/ro/projects"
+    folder: "src/ro/proiecte"
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "Deak David" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["projects"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["ro_projects"] }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Location", name: "location", widget: "string", default: "RO" }
       - { label: "Image", name: "image", widget: "image" }

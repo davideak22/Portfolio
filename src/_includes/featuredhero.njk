@@ -1,43 +1,51 @@
+{% set locKey = (locale | lower) ~ "_featured" %}
+{% set locItems = collections[locKey] or [] %}
+{% set enItems = collections.en_featured or [] %}
+
 <div class="min-h-screen px-4 py-12">
-    <div class="">
-      <h2 class="text-3xl sm:text-4xl text-red-600 font-bold  mb-10">{{'featuredhero.title' | i18n}} </h2>
-    </div>
+  <div class="">
+    <h2 class="text-3xl sm:text-4xl text-red-600 font-bold mb-10">
+      {{ 'featuredhero.title' | i18n }}
+    </h2>
+  </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-      {%- for featured in collections.featured | reverse -%}  
-          {% set title = featured.data.title %}
-          {% set type = featured.data.type %}
-          {% set image = featured.data.image %}
-          {% set url = featured.url %}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    {%- for en in enItems | reverse -%}
 
-          {% include "featured.njk" %}  
+      {% set chosen = en %}
+      {%- for loc in locItems -%}
+        {% if (loc.data.featuredId and en.data.featuredId and loc.data.featuredId == en.data.featuredId)
+              or (loc.fileSlug == en.fileSlug) %}
+          {% set chosen = loc %}
+        {% endif %}
       {%- endfor -%}
-    </div>
-    <div class="mt-20">
-      <!-- View All Projects Link -->
-      <div class="mt-12 text-center">
-        <a
-          href="/{{locale}}/{{ 'slugs.projects' | i18n }}"
-          class="inline-block text-white text-lg font-medium relative group transition"
-        >
-          <span>{{'featuredhero.cta' | i18n}}</span>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-4 h-4 inline-block ml-1 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19l14-14M13 5h6v6" />
-          </svg>
+      {% set title = chosen.data.title %}
+      {% set type = chosen.data.type %}
+      {% set image = chosen.data.image %}
+      {% set url = chosen.url %}
 
-          <!-- Underline animation -->
-          <span
-            class="block h-[2px] w-full bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left mt-1"
-          ></span>
-        </a>
-      </div>
+      {% include "featured.njk" %}
+    {%- endfor -%}
+  </div>
 
+  <div class="mt-20">
+    <div class="mt-12 text-center">
+      <a
+        href="/{{locale}}/{{ 'slugs.projects' | i18n }}"
+        class="inline-block text-white text-lg font-medium relative group transition"
+      >
+        <span>{{ 'featuredhero.cta' | i18n }}</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="w-4 h-4 inline-block ml-1 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 19l14-14M13 5h6v6" />
+        </svg>
+
+        <span class="block h-[2px] w-full bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left mt-1"></span>
+      </a>
     </div>
   </div>
+</div>

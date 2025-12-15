@@ -3,8 +3,8 @@ title: 32. Scientific Student Conference
 author: Deak David
 date: 2025-05-09
 tags:
-  - projects
-  - featured
+  - en_projects
+  - en_featured
 description: The 32nd Scientific Student Conference (Tudományos Diákköri Konferencia), organized by the Marosvásárhelyi Magyar Diákszövetség (MMDSZ), took place from May 7 to 10, 2025 in Marosvásárhely. Held at the historic Cultural Palace with its opening at the National Theatre and presentations at the Kultúrpalota, this event brought together around 230 scientific papers across 19 different sections covering medical, pharmaceutical, and dental sciences.
 location: RO
 image: /assets/uploads/tdk.jpg

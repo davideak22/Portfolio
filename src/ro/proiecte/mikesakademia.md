@@ -1,10 +1,10 @@
 ---
-title: Mikes Elsősegély Akadémia
+title: Academia de Prim Ajutor Mikes
 author: Deak David
 date: 2024-05-10
 tags:
-  - en_projects
-description: The Mikes Akadémia is a student-organized event by high school students in Sepsiszentgyörgy that combines health education with a first aid competition, and with the goal of engaging kids in both learning and practicing life-saving techniques.
+  - ro_projects
+description: Academia Mikes este un eveniment organizat de elevi de liceu din Sfântu Gheorghe, care îmbină educația pentru sănătate cu o competiție de prim ajutor, având ca scop implicarea copiilor atât în învățarea, cât și în practicarea tehnicilor de salvare a vieții.
 location: RO
 image: /assets/uploads/mikesakademia.jpg
 type:
@@ -12,9 +12,9 @@ type:
 layout: indiblog.njk
 ---
 
-The Mikes Akadémia is a student-organized event by high school students in Sepsiszentgyörgy that combines health education with a first aid competition, and with the goal of engaging kids in both learning and practicing life-saving techniques.
+Academia Mikes este un eveniment organizat de elevi de liceu din Sfântu Gheorghe, care îmbină educația pentru sănătate cu o competiție de prim ajutor. Scopul principal al evenimentului este de a implica copiii în mod activ atât în învățarea, cât și în exersarea tehnicilor esențiale de salvare a vieții.
 
-The program has two main parts. The first focuses on education, featuring a series of lectures and presentations led by doctors and other professionals on topics related to health, safety, and healthy living. The second is the competition itself, in which teams of four students put their skills to the test.
+Programul este structurat în două părți principale. Prima parte este axată pe educație și include o serie de prelegeri și prezentări susținute de medici și alți specialiști, abordând teme legate de sănătate, siguranță și un stil de viață sănătos. A doua parte constă în competiția propriu-zisă, în cadrul căreia echipe formate din patru elevi își testează cunoștințele și abilitățile practice.
 
 Scope of Work  
 {{type}}
@@ -34,15 +34,15 @@ Scope of Work
 
 </div>
 
-
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 not-prose mt-10">
   <div class="aspect-[4/5]">
-      <img src="/assets/uploads/D03ACDFC-0CE3-42AA-8DDB-698656099AED.jpg"  alt="Judge writing notes" class="rounded-xl w-full h-full " decoding="async" loading="lazy">
+      <img src="/assets/uploads/D03ACDFC-0CE3-42AA-8DDB-698656099AED.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full" decoding="async" loading="lazy">
   </div>
 
   <div class="aspect-[4/5]">
       <img src="/assets/uploads/D77F3403-6F76-4261-BA42-9051250874F1.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full" decoding="async" loading="lazy">
   </div>
+
   <div class="aspect-[4/5]">
       <img src="/assets/uploads/DeakDavid-5.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full" decoding="async" loading="lazy">
   </div>
@@ -51,5 +51,3 @@ Scope of Work
       <img src="/assets/uploads/7EEFD122-BAB7-44E1-BD25-F2D6E05DEB0F.jpg" alt="Judge writing notes" class="rounded-xl w-full h-full" decoding="async" loading="lazy">
   </div>
 </div>
-
-

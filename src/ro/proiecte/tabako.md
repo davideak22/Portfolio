@@ -1,9 +1,9 @@
 ---
-title: Sepsi Tabakó Festival
+title: Festivalul Sepsi Tabakó
 author: Deak David
 date: 2024-08-29
-tags: [en_projects,en_featured]
-description: The Sepsi Tabakó Festival is a popular music festival event in Sepsiszentgyörgy, combining live music, art, and community. The festival, which was previously held in the city's old tobacco factory and is currently held at the Sepsi Duna Arena, offers top Hungarian and regional artists, creative activities, and an atmosphere that combines youthful energy with local pride. It's where music, culture, and friends come together to wrap up the summer in style.
+tags: [ro_projects,ro_featured]
+description: Festivalul Sepsi Tabakó este unul dintre cele mai populare evenimente muzicale din Sfântu Gheorghe, îmbinând muzica live, arta și spiritul comunitar. Desfășurat anterior în fosta fabrică de tutun a orașului și organizat în prezent la Sepsi Duna Arena, festivalul aduce pe scenă artiști de top din Ungaria și din regiune, activități creative și o atmosferă care combină energia tinerilor cu mândria locală. Este locul unde muzica, cultura și prietenii se întâlnesc pentru a încheia vara într-un mod memorabil.
 image: /assets/uploads/tabako2024.jpg
 location: RO
 type: Video/Design
@@ -11,7 +11,7 @@ layout: "indiblog.njk"
 
 ---
 
-The Sepsi Tabakó Festival is a popular music festival event in Sepsiszentgyörgy, combining live music, art, and community. The festival, which was previously held in the city's old tobacco factory and is currently held at the Sepsi Duna Arena, offers top Hungarian and regional artists, creative activities, and an atmosphere that combines youthful energy with local pride. It's where music, culture, and friends come together to wrap up the summer in style.
+Festivalul Sepsi Tabakó este unul dintre cele mai populare evenimente muzicale din Sfântu Gheorghe, reunind muzica live, arta și comunitatea. Organizat anterior în fosta fabrică de tutun a orașului și găzduit în prezent de Sepsi Duna Arena, festivalul oferă concerte cu artiști de top din Ungaria și din regiune, activități creative și o atmosferă care îmbină energia tinerească cu mândria locală. Este locul unde muzica, cultura și prietenii se întâlnesc pentru a încheia vara cu stil.
 
 Scope of Work  
 {{type}}

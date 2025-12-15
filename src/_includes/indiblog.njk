@@ -7,10 +7,11 @@ layout: "base.njk"
       </div>
       
     <div class="mt-8">
-        By<a href="/en/about" rel="author"> {{author}} </a> /
+        {{'indiblog.author' | i18n}} <a href="/{{locale}}/about" rel="author"> {{author}} </a> /
         <time datetime="{{ date }}">
-            {{ date | postDate}}
-        </time>
+  {{ date | postDate(locale) }}
+</time>
+
     </div>
     <div class="md:text-6xl text-4xl flex ">   
         {{ title }}

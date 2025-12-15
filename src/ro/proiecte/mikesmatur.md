@@ -3,17 +3,18 @@ title: Mikes Maturándusz 2025
 author: Deak David
 date: 2025-02-22T20:00:00.000+02:00
 tags:
-  - en_projects
-description: The event unfolds in three parts, a camp, a week, and a gala. The camp brings all three classes together for fun and engaging games, turning the days into a friendly competition. The purpose of the celebration is to offer students in 12th grade with a final happy moment together before they graduate, allowing them to deepen the relationships they have formed over years of being in the same class from 9th to 12th grade.
+  - ro_projects
+description: "Evenimentul se desfășoară în trei etape: tabără, săptămână și gală. Tabăra aduce împreună cele trei clase prin jocuri distractive și interactive, transformând zilele într-o competiție prietenoasă. Scopul celebrării este de a oferi elevilor de clasa a XII-a un ultim moment fericit împreună înainte de absolvire, consolidând relațiile formate de-a lungul anilor petrecuți în aceeași clasă, din a IX-a până în a XII-a."
 location: RO
 image: /assets/uploads/mikes-matur-banner.jpg
 type:
   - Photo/Video/Design
 layout: indiblog.njk
 ---
-The Maturándusz(Matúr) is a popular event in Mikes Kelemen High School organized each year by 11th-grade students for the graduating class. It is a celebration aimed to provide the 12th grade with one final enjoyable experience together before they separate ways, allowing them to reinforce relationships formed over years of sharing the same class from 9th to 12th grade.
 
-The event is divided into three parts: camp, week, and gala.  The camp brings all three classes together for enjoyable and interesting games, transforming the days into friendly competition.  The Matúr week takes place at school, when adolescents play during breaks and dress up according to daily themes, adding color and energy to the hallways.  It all finishes in the gala, where each class performs on stage in a theatre-style performance.  The evening ends with a tearful farewell from the 11th grade to the graduates, followed by an after-party where the celebrations continue.
+Maturándusz (Matúr) este unul dintre cele mai îndrăgite evenimente tradiționale ale Liceului Teoretic Mikes Kelemen, organizat anual de elevii de clasa a XI-a pentru colegii lor din clasa a XII-a. Evenimentul are scopul de a le oferi absolvenților o ultimă experiență plăcută petrecută împreună înainte de a porni pe drumuri separate, consolidând legăturile formate de-a lungul anilor petrecuți în aceeași clasă, din a IX-a până în a XII-a.
+
+Evenimentul este structurat în trei părți: tabăra, săptămâna Matúr și gala. Tabăra reunește toate cele trei clase prin jocuri distractive și captivante, transformând zilele într-o competiție prietenoasă. Săptămâna Matúr are loc în incinta școlii, unde elevii se joacă în pauze și se costumează conform temelor zilnice, aducând culoare și energie pe holurile liceului. Totul se încheie cu gala, în cadrul căreia fiecare clasă urcă pe scenă cu un spectacol de tip teatral. Seara se termină cu un moment emoționant de rămas-bun din partea elevilor de clasa a XI-a pentru absolvenți, urmat de un after party unde distracția continuă.
 
 Scope of Work  
 {{type}}

@@ -379,6 +379,13 @@ module.exports = {
     hu: "Vissza a főoldalra",
     ro: "Înapoi la pagina principală"
   }
-}
+},
+  indiblog:{
+    author:{
+      'en':'By',
+      'hu':'Szerző:',
+      'ro':'Editor:'
+    }
+  }
 
 }

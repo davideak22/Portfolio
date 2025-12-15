@@ -1,15 +1,11 @@
 ---
-title: Saint George Days - The Base
+title: Szent György Napok – The Base
 author: Deak David
 date: 2025-05-10
 tags:
-  - en_projects
-  - en_featured
-description: The Base is a vibrant youth hub within the Saint George Days
-  festival, offers a mix of sports, games, music, and creative activities. It
-  attracts young, energetic visitors who are looking for a place to connect with
-  friends, try new experiences, and enjoy the festival atmosphere from morning
-  until late at night.
+  - hu_projects
+  - hu_featured
+description: A The Base a Szent György Napok fesztivál egyik pezsgő ifjúsági központja, amely sportok, játékok, zene és kreatív programok változatos kínálatát nyújtja. Fiatal, energikus látogatókat vonz, akik egy olyan helyet keresnek, ahol barátokkal találkozhatnak, új élményeket próbálhatnak ki, és reggeltől késő estig élvezhetik a fesztivál hangulatát.
 location: RO
 image: /assets/uploads/480604432_581955941510293_5512170684252330505_n-1-.png
 type:
@@ -17,9 +13,9 @@ type:
 layout: indiblog.njk
 ---
 
-The Base is a vibrant youth hub within the Saint George Days festival, offers a mix of sports, games, music, and creative activities. It attracts young, energetic visitors who are looking for a place to connect with friends, try new experiences, and enjoy the festival atmosphere from morning until late at night.
+A The Base a Szent György Napok fesztivál egyik pezsgő ifjúsági központja, amely sportok, játékok, zene és kreatív programok izgalmas keverékét kínálja. Azokat a fiatal, energikus látogatókat szólítja meg, akik egy olyan közösségi teret keresnek, ahol barátokkal kapcsolódhatnak, új élményeket szerezhetnek, és reggeltől késő estig átélhetik a fesztivál hangulatát.
 
-Located in the courtyard of the old tobacco factory, The Base blends urban industrial charm with playful energy. Visitors can enjoy activities like ping-pong, teqball, and table football, discover live street performances, or take part in interactive programs.
+A régi dohánygyár udvarában kialakított helyszín az ipari-urbánus hangulatot játékos energiával ötvözi. A látogatók olyan aktivitásokban vehetnek részt, mint az asztalitenisz, a teqball vagy a csocsó, élő utcai produkciókat fedezhetnek fel, illetve interaktív programokhoz csatlakozhatnak.
 
 Scope of Work  
 {{type}}
@@ -57,7 +53,6 @@ Scope of Work
 <img src="/assets/uploads/base/Base nappali2_day3-34.jpg" class="rounded-xl" alt="Instagram feed design" decoding="async" loading="lazy">
 </div>
 </div>
-
 
 <img src="/assets/uploads/base/Realistic_Badge_Cards_Mockup.jpg" class="rounded-xl" alt="Badge designs" decoding="async" loading="lazy">
 

@@ -3,17 +3,18 @@ title: Mikes Maturándusz 2025
 author: Deak David
 date: 2025-02-22T20:00:00.000+02:00
 tags:
-  - en_projects
-description: The event unfolds in three parts, a camp, a week, and a gala. The camp brings all three classes together for fun and engaging games, turning the days into a friendly competition. The purpose of the celebration is to offer students in 12th grade with a final happy moment together before they graduate, allowing them to deepen the relationships they have formed over years of being in the same class from 9th to 12th grade.
+  - hu_projects
+description: "Az esemény három részből áll: táborból, hétből és gálából. A tábor mindhárom végzős osztályt összehozza játékos és élvezetes programokkal, ahol a napok barátságos versengéssé alakulnak. Az ünnepség célja, hogy a 12. osztályos diákok számára egy utolsó közös, boldog élményt nyújtson a ballagás előtt, elmélyítve azokat a kapcsolatokat, amelyek a 9–12. osztály során alakultak ki."
 location: RO
 image: /assets/uploads/mikes-matur-banner.jpg
 type:
   - Photo/Video/Design
 layout: indiblog.njk
 ---
-The Maturándusz(Matúr) is a popular event in Mikes Kelemen High School organized each year by 11th-grade students for the graduating class. It is a celebration aimed to provide the 12th grade with one final enjoyable experience together before they separate ways, allowing them to reinforce relationships formed over years of sharing the same class from 9th to 12th grade.
 
-The event is divided into three parts: camp, week, and gala.  The camp brings all three classes together for enjoyable and interesting games, transforming the days into friendly competition.  The Matúr week takes place at school, when adolescents play during breaks and dress up according to daily themes, adding color and energy to the hallways.  It all finishes in the gala, where each class performs on stage in a theatre-style performance.  The evening ends with a tearful farewell from the 11th grade to the graduates, followed by an after-party where the celebrations continue.
+A Maturándusz (Matúr) a Mikes Kelemen Líceum egyik legnépszerűbb hagyományos eseménye, amelyet minden évben a 11. osztályos diákok szerveznek a végzős évfolyam számára. Az ünnepség célja, hogy a 12. osztályosoknak egy utolsó közös, örömteli élményt nyújtson, mielőtt útjaik különválnának, és lehetőséget adjon a 9–12. osztály során kialakult barátságok megerősítésére.
+
+Az esemény három fő részből áll: táborból, Matúr-hétből és gálából. A tábor során mindhárom osztály együtt vesz részt szórakoztató és izgalmas játékokban, amelyek barátságos versengéssé alakítják a napokat. A Matúr-hét az iskolában zajlik, ahol a diákok a szünetekben játszanak, valamint a napi témák szerint öltöznek, színt és lendületet adva az iskola folyosóinak. Az eseménysorozat a gálával zárul, ahol az osztályok színházi jellegű előadások keretében lépnek színpadra. Az est megható búcsúval ér véget, amelyet a 11. osztályosok tartanak a végzősök számára, majd egy after party következik, ahol az ünneplés tovább folytatódik.
 
 Scope of Work  
 {{type}}

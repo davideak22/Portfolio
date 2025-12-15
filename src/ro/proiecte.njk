@@ -1,20 +1,37 @@
 ---
 layout: "base.njk"
-title: PROJECTS
+title: PROIECTE
 ---
 
+{% set locKey = (locale | lower) ~ "_projects" %}
+{% set locItems = collections[locKey] or [] %}
+{% set enItems = collections.en_projects or [] %}
+
 <div>
-    <div class="mt-10 mb-10">
-        {% include "projectshero.njk" %}
-    </div>
-    <div class="mt-10">
-        {%- for projects in collections.projects | reverse -%}  
-            {% set title = projects.data.title %}
-            {% set location = projects.data.location %}
-            {% set image = projects.data.image or "/photo2.jpg" %}
-            {% set url = projects.url %} 
-            {% set date = projects.date %} 
-            {% include "projectscard.njk" %}  
-        {%- endfor -%}
-    </div>
+  <div class="mt-10 mb-10">
+    {% include "projectshero.njk" %}
+  </div>
+
+  <div class="mt-10">
+    {%- for en in enItems | reverse -%}
+
+      {# try to find matching localized project #}
+      {% set chosen = en %}
+      {%- for loc in locItems -%}
+        {# match by projectId (recommended) OR by fileSlug #}
+        {% if (loc.data.projectId and en.data.projectId and loc.data.projectId == en.data.projectId)
+              or (loc.fileSlug == en.fileSlug) %}
+          {% set chosen = loc %}
+        {% endif %}
+      {%- endfor -%}
+
+      {% set title = chosen.data.title %}
+      {% set location = chosen.data.location %}
+      {% set image = chosen.data.image or "/photo2.jpg" %}
+      {% set url = chosen.url %}
+      {% set date = chosen.date %}
+      {% include "projectscard.njk" %}
+
+    {%- endfor -%}
+  </div>
 </div>
