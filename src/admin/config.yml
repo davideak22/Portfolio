@@ -1,43 +1,123 @@
 backend:
-  name: git-gateway        # use this only on Netlify (with Identity + Git Gateway)
+  name: git-gateway
   branch: main
 
 eleventyExcludeFromCollections: true
 noindex: true
 
-media_folder: "src/assets/uploads"   # store in source, not build
+media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
 
-
 collections:
-  - name: "blog"
-    label: "Blog"
+  # Create separate collections for each language
+  # English collection
+  - name: "blog_en"
+    label: "Blog (English)"
     folder: "src/en/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title (English)", name: "title", widget: "string" }
+      - { label: "Description (English)", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "Deak David" }
-      - { label: "Description", name: "description", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  
-  - name: "projects"
-    label: "Projects"
+      - { label: "Body (English)", name: "body", widget: "markdown" }
+      - { label: "HU Translation Slug", name: "hu_slug", widget: "string", required: false, hint: "Slug of Hungarian version (e.g., 2024-01-15_same-post)" }
+      - { label: "RO Translation Slug", name: "ro_slug", widget: "string", required: false, hint: "Slug of Romanian version (e.g., 2024-01-15_same-post)" }
+
+  # Hungarian collection
+  - name: "blog_hu"
+    label: "Blog (Hungarian)"
+    folder: "src/hu/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "Title (Hungarian)", name: "title", widget: "string" }
+      - { label: "Description (Hungarian)", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
+      - { label: "Body (Hungarian)", name: "body", widget: "markdown" }
+      - { label: "EN Translation Slug", name: "en_slug", widget: "string", required: false, hint: "Slug of English version" }
+      - { label: "RO Translation Slug", name: "ro_slug", widget: "string", required: false, hint: "Slug of Romanian version" }
+
+  # Romanian collection  
+  - name: "blog_ro"
+    label: "Blog (Romanian)"
+    folder: "src/ro/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "Title (Romanian)", name: "title", widget: "string" }
+      - { label: "Description (Romanian)", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
+      - { label: "Body (Romanian)", name: "body", widget: "markdown" }
+      - { label: "EN Translation Slug", name: "en_slug", widget: "string", required: false, hint: "Slug of English version" }
+      - { label: "HU Translation Slug", name: "hu_slug", widget: "string", required: false, hint: "Slug of Hungarian version" }
+
+  # Projects collections (same pattern)
+  - name: "projects_en"
+    label: "Projects (English)"
     folder: "src/en/projects"
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title (English)", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "Deak David" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["projects"] }
-      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Description (English)", name: "description", widget: "string" }
       - { label: "Location", name: "location", widget: "string", default: "RO" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Type", name: "type", widget: "list", default: ["Photo/Video"] }
       - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body (English)", name: "body", widget: "markdown" }
+      - { label: "HU Translation Slug", name: "hu_slug", widget: "string", required: false }
+      - { label: "RO Translation Slug", name: "ro_slug", widget: "string", required: false }
+
+  - name: "projects_hu"
+    label: "Projects (Hungarian)"
+    folder: "src/hu/projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "Title (Hungarian)", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["projects"] }
+      - { label: "Description (Hungarian)", name: "description", widget: "string" }
+      - { label: "Location", name: "location", widget: "string", default: "RO" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Type", name: "type", widget: "list", default: ["Photo/Video"] }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
+      - { label: "Body (Hungarian)", name: "body", widget: "markdown" }
+      - { label: "EN Translation Slug", name: "en_slug", widget: "string", required: false }
+      - { label: "RO Translation Slug", name: "ro_slug", widget: "string", required: false }
+
+  - name: "projects_ro"
+    label: "Projects (Romanian)"
+    folder: "src/ro/projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "Title (Romanian)", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["projects"] }
+      - { label: "Description (Romanian)", name: "description", widget: "string" }
+      - { label: "Location", name: "location", widget: "string", default: "RO" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Type", name: "type", widget: "list", default: ["Photo/Video"] }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
+      - { label: "Body (Romanian)", name: "body", widget: "markdown" }
+      - { label: "EN Translation Slug", name: "en_slug", widget: "string", required: false }
+      - { label: "HU Translation Slug", name: "hu_slug", widget: "string", required: false }
