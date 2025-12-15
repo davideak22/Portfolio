@@ -2,6 +2,9 @@ backend:
   name: git-gateway        # use this only on Netlify (with Identity + Git Gateway)
   branch: main
 
+site_url: https://daviddeak.com/  # Replace with your actual site URL
+display_url: https://daviddeak.com/ 
+
 eleventyExcludeFromCollections: true
 noindex: true
 
