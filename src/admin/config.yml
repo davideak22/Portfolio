@@ -1,107 +1,33 @@
 backend:
-  name: git-gateway
+  name: git-gateway        # use this only on Netlify (with Identity + Git Gateway)
   branch: main
-
-# IMPORTANT: Make sure these two lines are present
-site_url: https://your-site-url.netlify.app  # Replace with your actual site URL
-display_url: https://your-site-url.netlify.app  # Replace with your actual site URL
 
 eleventyExcludeFromCollections: true
 noindex: true
 
-media_folder: "src/assets/uploads"
+media_folder: "src/assets/uploads"   # store in source, not build
 public_folder: "/assets/uploads"
 
-# Keep it simple - one collection per language folder
+
 collections:
-  # English blog (your original structure)
-  - name: "blog_en"
-    label: "Blog (English)"
+  - name: "blog"
+    label: "Blog"
     folder: "src/en/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string", default: "Deak David" }
+      - { label: "Description", name: "description", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
       - { label: "Body", name: "body", widget: "markdown" }
-
-  # Hungarian blog  
-  - name: "blog_hu"
-    label: "Blog (Hungarian)"
-    folder: "src/hu/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  # Romanian blog
-  - name: "blog_ro"
-    label: "Blog (Romanian)"
-    folder: "src/ro/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  # English projects
-  - name: "projects_en"
-    label: "Projects (English)"
+  
+  - name: "projects"
+    label: "Projects"
     folder: "src/en/projects"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["projects"] }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Location", name: "location", widget: "string", default: "RO" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Type", name: "type", widget: "list", default: ["Photo/Video"] }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  # Hungarian projects  
-  - name: "projects_hu"
-    label: "Projects (Hungarian)"
-    folder: "src/hu/projects"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "string", default: "Deak David" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["projects"] }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Location", name: "location", widget: "string", default: "RO" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Type", name: "type", widget: "list", default: ["Photo/Video"] }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "indiblog.njk" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  # Romanian projects
-  - name: "projects_ro"
-    label: "Projects (Romanian)"
-    folder: "src/ro/projects"
     create: true
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
