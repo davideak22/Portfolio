@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ locale }}" dir="{{ dir }}">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PFD927FJ42"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PFD927FJ42');
-</script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title %}{{ title }} - {% endif %}DAVID DEAK</title>
@@ -20,6 +12,15 @@
     <meta name="description" content="{{ description or 'Creative Portfolio of Deak David' }}">
     <link rel="canonical" href="https://daviddeak.com{{ page.url }}">
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="66922470-051e-4251-855b-e1d19d712825" data-blockingmode="auto" type="text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFD927FJ42"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PFD927FJ42');
+    </script>
 </head>
 <body class="bg-black text-white ">
     <div id="loader" class="fixed h-screen inset-0 z-50 bg-black flex items-center justify-center">
