@@ -25,6 +25,7 @@ This project is a static portfolio website built using the **11ty (Eleventy)** s
   - `_data/`: Global data files available to all templates.
     - `translations.js`: Contains dictionary for i18n strings.
     - `site.json`: Global site metadata (e.g., URL).
+    - `meta.js`: Computes build-time data (e.g., current year) to prevent hydration mismatches.
   - `_includes/`: Reusable template partials (layouts, components).
     - `base.njk`: The main base layout wrapper.
     - `header.njk`, `footer.njk`: Site navigation and footer.
@@ -211,12 +212,8 @@ The site-wide footer with social links and automated copyright date.
 **Example Usage**:
 
 ```html
-<!-- Auto-updating year -->
-&copy;
-<script>
-  document.write(new Date().getFullYear());
-</script>
-{{ 'footer.copyright' | i18n }}
+<!-- Auto-updating year (Build-time generated via meta.js) -->
+&copy; {{ meta.year }} {{ 'footer.copyright' | i18n }}
 ```
 
 ### 4. `hero.njk` (Homepage Hero)
