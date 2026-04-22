@@ -89,12 +89,101 @@ Configures the visual system.
 
 ### Internationalization (i18n)
 
-The site uses a dictionary-based approach in `src/_data/translations.js`.
+The site uses a **dictionary-based approach** with the `eleventy-plugin-i18n` plugin for multi-language support.
 
-- **Structure**: The file exports a hierarchical object.
-  - Example: `navbar.home` contains objects for `'en'`, `'hu'`, and `'ro'`.
-- **Usage**: In Nunjucks templates, you would access these using the directory structure, likely combined with a custom filter or helper provided by the plugin (or direct data access if passed efficiently).
-- **Routing**: Distinct folders (`en`, `hu`, `ro`) create the URL structure (e.g., `/en/about`, `/hu/rolam`).
+#### 1. Plugin Configuration (`.eleventy.js`)
+
+The i18n plugin is configured with the following settings:
+
+| Setting           | Value                         | Description                                        |
+| ----------------- | ----------------------------- | -------------------------------------------------- |
+| `translations`    | `./src/_data/translations.js` | Source file for all translatable strings           |
+| `languages`       | `['en', 'hu', 'ro']`          | Supported languages (English, Hungarian, Romanian) |
+| `defaultLanguage` | `'en'`                        | Fallback language when translation is missing      |
+| `fallbackLocales` | Maps to `'en'`                | Explicit fallback chain for missing translations   |
+
+#### 2. Translation Dictionary (`src/_data/translations.js`)
+
+The file exports a hierarchical object structure containing all translatable strings:
+
+```javascript
+// Example structure:
+module.exports = {
+  navbar: {
+    home: { en: "Home", hu: "Főoldal", ro: "Acasă" },
+    blog: { en: "Blog", hu: "Blog", ro: "Blog" },
+    projects: { en: "Projects", hu: "Projektek", ro: "Proiecte" },
+  },
+  footer: {
+    copyright: {
+      en: "All rights reserved",
+      hu: "Minden jog fenntartva",
+      ro: "...",
+    },
+  },
+  slugs: {
+    blog: { en: "blog", hu: "blog", ro: "blog" },
+    about: { en: "about", hu: "rolam", ro: "despre" },
+  },
+  // ... more keys
+};
+```
+
+#### 3. Usage in Nunjucks Templates
+
+Access translated strings using the `| i18n` filter:
+
+```njk
+{# Basic usage - outputs translated string based on current locale #}
+{{ 'navbar.home' | i18n }}           {# → "Home" or "Főoldal" or "Acasă" #}
+{{ 'footer.copyright' | i18n }}
+{{ 'contactform.sendmessage' | i18n }}
+
+{# In links with localized slugs #}
+<a href="/{{ locale }}/{{ 'slugs.blog' | i18n }}">
+  {{ 'navbar.blog' | i18n }}
+</a>
+```
+
+#### 4. Locale Detection from URL
+
+The current locale is automatically detected from the URL path structure:
+
+```njk
+{% set currentUrl = page.url or '/' %}
+{% if currentUrl.startsWith('/hu') %}
+  {% set locale = 'hu' %}
+{% elif currentUrl.startsWith('/ro') %}
+  {% set locale = 'ro' %}
+{% else %}
+  {% set locale = 'en' %}
+{% endif %}
+```
+
+#### 5. URL Routing by Language
+
+Each language has its own content directory, creating distinct URL paths:
+
+| Directory | URL Pattern | Example                  |
+| --------- | ----------- | ------------------------ |
+| `src/en/` | `/en/*`     | `/en/about`, `/en/blog`  |
+| `src/hu/` | `/hu/*`     | `/hu/rolam`, `/hu/blog`  |
+| `src/ro/` | `/ro/*`     | `/ro/despre`, `/ro/blog` |
+
+Each language directory contains:
+
+- `index.njk`: Landing page for that language
+- Content pages (e.g., `about.njk`, `blog.njk`, `projects.njk`)
+- Sub-collections (e.g., `blog/`, `projects/`)
+
+#### Quick Reference: Adding New Translations
+
+| Task                        | How To                                                              |
+| --------------------------- | ------------------------------------------------------------------- | -------- |
+| Add new translatable string | Add key to `src/_data/translations.js` with `en`, `hu`, `ro` values |
+| Use translation in template | `{{ 'key.path'                                                      | i18n }}` |
+| Create localized page       | Add `.njk` file under `/en/`, `/hu/`, and `/ro/` directories        |
+| Add localized URL slug      | Add entry to `slugs` object in `translations.js`                    |
 
 ### Templates (`src/_includes/`)
 
