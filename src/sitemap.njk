@@ -3,7 +3,7 @@ permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {%- set pages = collections.all
   | rejectattr("data.draft", "truthy")
   | rejectattr("data.noindex", "truthy")
@@ -19,6 +19,11 @@ eleventyExcludeFromCollections: true
   {%- if not isAdmin -%}
     <url>
       <loc>{{ site.url }}{{ page.url | url }}</loc>
+      {%- for p in collections.all -%}
+        {%- if p.fileSlug == page.fileSlug -%}
+          <xhtml:link rel="alternate" hreflang="{{ p.data.locale or 'en' }}" href="{{ site.url }}{{ p.url | url }}" />
+        {%- endif -%}
+      {%- endfor -%}
       {%- if page.data.updated or page.date -%}
       <lastmod>{{ (page.data.updated or page.date).toISOString() }}</lastmod>
       {%- endif -%}

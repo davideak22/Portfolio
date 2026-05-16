@@ -386,6 +386,18 @@ module.exports = {
       'hu':'Szerző:',
       'ro':'Editor:'
     }
+  },
+  seo: {
+    title: {
+      'en': 'David Deak | Graphic Designer for Hire & Event Photographer | Romania',
+      'hu': 'Deák Dávid | Grafikus és Eseményfotós | Románia, Kovászna',
+      'ro': 'David Deak | Designer Grafic și Fotograf de Evenimente | România, Covasna'
+    },
+    description: {
+      'en': 'Professional graphic designer for hire and event videographer/photographer based in Romania, Covasna county. Specializing in visual storytelling and digital identities.',
+      'hu': 'Professzionális grafikus és eseményfotós/videós Romániában, Kovászna megyében. Vizuális történetmesélésre és digitális arculatokra specializálódott.',
+      'ro': 'Designer grafic profesionist și videograf/fotograf de evenimente în România, județul Covasna. Specializat în storytelling vizual și identități digitale.'
+    }
   }
 
 }
