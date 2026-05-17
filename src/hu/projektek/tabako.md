@@ -2,7 +2,7 @@
 title: Sepsi Tabakó Fesztivál
 author: Deak David
 date: 2024-08-29
-tags: [hu_projects,hu_featured]
+tags: [hu_projects]
 description: A Sepsi Tabakó Fesztivál Sepsiszentgyörgy egyik legnépszerűbb zenei fesztiválja, amely az élőzenét, a művészetet és a közösségi élményt ötvözi. A korábban a város régi dohánygyárában, jelenleg pedig a Sepsi Duna Arénában megrendezett esemény neves magyar és regionális előadókat, kreatív programokat, valamint fiatalos lendületet és helyi büszkeséget sugárzó hangulatot kínál. Itt találkozik a zene, a kultúra és a barátság, hogy stílusosan zárják a nyarat.
 image: /assets/uploads/tabako2024.jpg
 location: RO

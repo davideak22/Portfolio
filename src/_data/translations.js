@@ -65,7 +65,7 @@ module.exports = {
     },
     bold: {
       'en':'many',
-      'hu':'bennünk',
+      'hu':'bennem',
       'ro':'mulți'
     }
   },

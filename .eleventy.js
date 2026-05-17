@@ -19,6 +19,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/photo3.jpg");
     eleventyConfig.addPassthroughCopy("./src/assets");
     eleventyConfig.addPassthroughCopy("./src/admin");
+    eleventyConfig.addPassthroughCopy("./src/_redirects");
     
     eleventyConfig.addFilter("postDate", (dateObj, locale = "en") => {
   if (!dateObj) return "";

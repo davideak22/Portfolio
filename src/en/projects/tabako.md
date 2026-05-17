@@ -2,13 +2,12 @@
 title: Sepsi Tabakó Festival
 author: Deak David
 date: 2024-08-29
-tags: [en_projects,en_featured]
+tags: [en_projects]
 description: The Sepsi Tabakó Festival is a popular music festival event in Sepsiszentgyörgy, combining live music, art, and community. The festival, which was previously held in the city's old tobacco factory and is currently held at the Sepsi Duna Arena, offers top Hungarian and regional artists, creative activities, and an atmosphere that combines youthful energy with local pride. It's where music, culture, and friends come together to wrap up the summer in style.
 image: /assets/uploads/tabako2024.jpg
 location: RO
 type: Video/Design
 layout: "indiblog.njk"
-
 ---
 
 The Sepsi Tabakó Festival is a popular music festival event in Sepsiszentgyörgy, combining live music, art, and community. The festival, which was previously held in the city's old tobacco factory and is currently held at the Sepsi Duna Arena, offers top Hungarian and regional artists, creative activities, and an atmosphere that combines youthful energy with local pride. It's where music, culture, and friends come together to wrap up the summer in style.
