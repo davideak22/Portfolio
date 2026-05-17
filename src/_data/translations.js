@@ -60,12 +60,12 @@ module.exports = {
   scrollingtrust:{
     title:{
       'en':'Trusted by ',
-      'hu':'Sokan bíznak ',
+      'hu':'Sokak által ',
       'ro':'Încredere acordată de '
     },
     bold: {
       'en':'many',
-      'hu':'bennem',
+      'hu':'megbízott',
       'ro':'mulți'
     }
   },
