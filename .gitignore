@@ -4,3 +4,4 @@ node_modules/
 # Ignore the public folder
 public/
 backup/
+.DS_Store
