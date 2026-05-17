@@ -2,7 +2,7 @@
 title: Festivalul Sepsi Tabakó
 author: Deak David
 date: 2024-08-29
-tags: [ro_projects,ro_featured]
+tags: [ro_projects]
 description: Festivalul Sepsi Tabakó este unul dintre cele mai populare evenimente muzicale din Sfântu Gheorghe, îmbinând muzica live, arta și spiritul comunitar. Desfășurat anterior în fosta fabrică de tutun a orașului și organizat în prezent la Sepsi Duna Arena, festivalul aduce pe scenă artiști de top din Ungaria și din regiune, activități creative și o atmosferă care combină energia tinerilor cu mândria locală. Este locul unde muzica, cultura și prietenii se întâlnesc pentru a încheia vara într-un mod memorabil.
 image: /assets/uploads/tabako2024.jpg
 location: RO

@@ -2,14 +2,13 @@
 title: The Base @ Szent György Napok 2026
 author: Deak David
 date: 2026-05-03T00:00:00.000+03:00
-tags:
-  - hu_projects
+tags: [hu_projects, hu_featured]
 description: >
   "The Base" egy dedikált al-esemény volt a 2026-os Szent György Napok fesztiválon (május 1-3.), amelynek célja egy egyedi kulturális és közösségi csomópont létrehozása volt a nagyobb ünnepségen belül. Szerepköröm átfogó volt, a kezdeti marketingstratégiától és grafikai arculattól kezdve a helyszíni csapatmenedzsmenten át a tartalomgyártásig. Én irányítottam a közösségi média jelenlétet minden platformon, kezeltem a fotós és videós csapatot, és személyesen örökítettem meg a legfontosabb pillanatokat az utófilm elkészítéséhez.
 location: RO
 image: /assets/uploads/base2/design-1.jpg
 type:
-  - Marketing/Social Media/Design/Video
+  - Marketing
 layout: indiblog.njk
 ---
 

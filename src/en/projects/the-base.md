@@ -2,14 +2,13 @@
 title: The Base @ Saint George Days 2026
 author: Deak David
 date: 2026-05-03T00:00:00.000+03:00
-tags:
-  - en_projects
+tags: [en_projects, en_featured]
 description: >
   "The Base" was a dedicated sub-event during the 2026 Saint George Days festival (May 1-3), designed to create a unique cultural and social hub within the larger celebration. My role was comprehensive, spanning from initial marketing strategy and graphic identity to on-site team management and content creation. I led the social media presence across all platforms, managed the photography and videography team, and personally captured key moments to produce the final aftermovie.
 location: RO
 image: /assets/uploads/base2/design-1.jpg
 type:
-  - Marketing/Social Media/Design/Video
+  - Marketing
 layout: indiblog.njk
 ---
 

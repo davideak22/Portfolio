@@ -2,14 +2,13 @@
 title: The Base @ Zilele Sfântu Gheorghe 2026
 author: Deak David
 date: 2026-05-03T00:00:00.000+03:00
-tags:
-  - ro_projects
+tags: [ro_projects, ro_featured]
 description: >
   „The Base” a fost un sub-eveniment dedicat în cadrul festivalului Zilele Sfântu Gheorghe 2026 (1-3 mai), conceput pentru a crea un hub cultural și social unic în cadrul celei mai mari sărbători. Rolul meu a fost unul complex, acoperind totul de la strategia inițială de marketing și identitatea grafică până la gestionarea echipei la fața locului și crearea de conținut. Am coordonat prezența în social media pe toate platformele, am gestionat echipa de fotografi și videografi și am capturat personal momente cheie pentru realizarea aftermovie-ului final.
 location: RO
 image: /assets/uploads/base2/design-1.jpg
 type:
-  - Marketing/Social Media/Design/Video
+  - Marketing
 layout: indiblog.njk
 ---
 
