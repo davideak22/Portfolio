@@ -7,7 +7,7 @@ layout: "base.njk"
       </div>
       
     <div class="mt-8">
-        {{'indiblog.author' | i18n}} <a href="/{{locale}}/about" rel="author"> {{author}} </a> /
+        {{'indiblog.author' | i18n}} <a href="/{{locale}}/{{ 'slugs.aboutme' | i18n }}" rel="author"> {{author}} </a> /
         <time datetime="{{ date }}">
   {{ date | postDate(locale) }}
 </time>

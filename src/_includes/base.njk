@@ -45,6 +45,7 @@
       "@id": "{{ site.url }}",
       "url": "{{ site.url }}",
       "telephone": "",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Sfântu Gheorghe",
@@ -56,11 +57,32 @@
         "latitude": 45.8606,
         "longitude": 25.7875
       },
-      "sameAs": [
-        "https://www.instagram.com/daviddeak/",
-        "https://www.linkedin.com/in/daviddeak/"
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Covasna"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Transylvania"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Romania"
+        }
       ],
-      "jobTitle": "Graphic Designer & Event Photographer",
+      "sameAs": [
+        "https://www.instagram.com/davideak_/",
+        "https://www.linkedin.com/in/david-deak-b1a43437b/"
+      ],
+      "jobTitle": "Graphic Designer, Videographer & Photographer",
+      "knowsAbout": [
+        "Graphic Design",
+        "Event Photography",
+        "Documentary Style Photography",
+        "Videography",
+        "Cinematic Video Production"
+      ],
       "description": "{{ 'seo.description' | i18n }}"
     }
     </script>

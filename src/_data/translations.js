@@ -256,9 +256,9 @@ module.exports = {
       'ro':'DESPRE MINE'
     },
     about:{
-      'en':"I'm Dávid, a visual designer and creative strategist with a passion for storytelling through photography, video, and design based in Transylvania. I specialize in building digital identities and campaigns.",
-      'hu':'Dávid vagyok, vizuális tervező, aki a fotózásban, videóban és designban megjelenő történetmesélés iránt szenvedélyes. Erdélyben élek és dolgozom. Digitális arculatok és kampányok építésére specializálódom.',
-      'ro':'Sunt Dávid, designer vizual pasionat de storytelling prin fotografie, video și design. Sunt stabilit în Transilvania. Sunt specializat în construirea identităților digitale și a campaniilor.'
+      'en':"I'm Dávid, a professional Graphic Designer, Videographer, and Event Photographer with a passion for cinematic video and a unique documentary style photographer approach. Based in Transylvania, Romania (Covasna County), I specialize in building digital identities, campaigns, and high-impact visual stories.",
+      'hu':'Dávid vagyok, hivatásos grafikus, videós és eseményfotós Erdélyben (Kovászna megyében). Szenvedélyem a cinematic videó készítés és a dokumentarista stílusú fotós látásmód. Digitális arculatok és kampányok tervezésére specializálódom.',
+      'ro':'Sunt Dávid, designer grafic, videograf și fotograf de evenimente profesionist stabilit în Transilvania (județul Covasna). Sunt pasionat de producția de video cinematic și am o abordare de fotograf în stil documentar. Sunt specializat în crearea de identități digitale și campanii vizuale.'
     },
     title2:{
       'en':'My Creative Approach',
@@ -389,14 +389,14 @@ module.exports = {
   },
   seo: {
     title: {
-      'en': 'David Deak | Graphic Designer for Hire & Event Photographer | Romania',
-      'hu': 'Deák Dávid | Grafikus és Eseményfotós | Románia, Kovászna',
-      'ro': 'David Deak | Designer Grafic și Fotograf de Evenimente | România, Covasna'
+      'en': 'David Deak | Graphic Designer, Videographer & Event Photographer in Transylvania, Romania (Covasna)',
+      'hu': 'Deák Dávid | Grafikus, Videós és Eseményfotós - Erdély, Kovászna',
+      'ro': 'David Deak | Designer Grafic, Videograf și Fotograf de Evenimente - Transilvania, Covasna'
     },
     description: {
-      'en': 'Professional graphic designer for hire and event videographer/photographer based in Romania, Covasna county. Specializing in visual storytelling and digital identities.',
-      'hu': 'Professzionális grafikus és eseményfotós/videós Romániában, Kovászna megyében. Vizuális történetmesélésre és digitális arculatokra specializálódott.',
-      'ro': 'Designer grafic profesionist și videograf/fotograf de evenimente în România, județul Covasna. Specializat în storytelling vizual și identități digitale.'
+      'en': 'David Deak is a premier Graphic Designer, Videographer, and Event Photographer in Transylvania, Romania (Judet Covasna). Specializing in cinematic video, documentary style photography, and brand design.',
+      'hu': 'Deák Dávid professzionális grafikus, videós és eseményfotós Erdélyben, Kovászna megyében. Szakterülete a cinematic videó készítés, a dokumentarista stílusú fotózás és a grafikai tervezés.',
+      'ro': 'David Deak este designer grafic, videograf și fotograf de evenimente în Transilvania, județul Covasna. Specializat în video cinematic, fotograf în stil documentar și design grafic.'
     }
   }
 
